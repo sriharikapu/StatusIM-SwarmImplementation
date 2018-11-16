@@ -34,6 +34,8 @@ contract SimpleStaticHTMLStorage {
 Now, Got to run section and interact with deployed contract..
 You can set your HTML using SetHTML. You can only pass [stringified html](https://www.willpeavy.com/minifier/). 
 
+![Image](https://github.com/sriharikapu/StatusIM-SwarmImplementation/blob/master/assets/Screen%20Shot%202018-11-16%20at%2010.04.58%20AM.png?raw=true)
+
 Note: The major drawback in this approach is you cannot be able this for storing a huge html page, Which might result in error's in gas calicuation. Although I have a alternative idea to by pass this problem. Which is by storing a stringified division or section of html in various solidity functions and render them on and align them on front end. This will work fine although we will end up in crating more functions than what we ecpected. Over all the pro's with this approach is you can modify your html anytime you want.
 
 
