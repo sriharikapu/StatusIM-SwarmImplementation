@@ -143,10 +143,12 @@ Common Errors That I came accross:
 
 Further Scope: 
 
-Right now am able to store and serve a static html from the swarm. In future we can use a similar approch for the storing of static portfolio websites/ Resumes and any content behind the hash. Right now its possible to do live streaming video's over swarm. Which can possibilly unleash us in creating much more sophisticated infrastructure which can help us in building a better `Web3.0.`
+Right now am able to store and serve a static html from the swarm. In future we can use a similar approch for the storing of static portfolio websites/ Resumes and any content behind the hash. Right now its possible to do live streaming video's over swarm. Which can possibilly unleash us in creating much more sophisticated infrastructure which can help us in building a better `Web3.0.` Its possible to host the swarm static web page over ENS. 
 
 
-
+For collaborating: 
+- Fork the code and create pull request.
+- If you come accoss create issues Reach out to the community on [Gitter](https://gitter.im/ethereum/swarm)
 
 
 # Tools used
