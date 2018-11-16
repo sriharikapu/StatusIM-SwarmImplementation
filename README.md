@@ -120,10 +120,10 @@ cd src
 ```
 Now install the node js dependencies
 ```
-sudo npm install
-sudo npm install -g pm2 
-sudo npm install -g expressjs
-sudo npm install -g swarmgw
+npm install
+npm install -g pm2 
+npm install -g expressjs
+npm install -g swarmgw
 ```
 We can start ```render.js``` using the process manager pm2. In order to access the html code via localhost
 ```
