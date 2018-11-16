@@ -1,4 +1,5 @@
 # Status.im Swarm Implementation
+[![Join the chat at https://gitter.im/ethereum/swarm](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/ethereum/swarm?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) [![Build Status](https://travis-ci.org/ethereum/swarm.svg?branch=develop)](https://travis-ci.org/ethereum/swarm)
 A simple way to host static html webpages on Ethereum Smart contracts and Ethereum swarm. In this project I focused on implementing the rendering of static html web pages from Ethereum Smart Contracts and Ethereum Swarm. 
 
 ## Rendering from Ethereum Smart Contracts [Not Recommended]
