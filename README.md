@@ -138,6 +138,13 @@ Common Errors That I came accross:
 - swarm_upload.go:8:5: can't find import: "github.com/ethereum/go-ethereum/swarm/api/client"
 - swarm: unrecognized option '--ens-api'
 - Error: Illegal header line in fasta file.
+- go: disabling cache
+
+
+Further Scope: 
+
+Right now am able to store and serve a static html from the swarm. In future we can use a similar approch for the storing of static portfolio websites/ Resumes and any content behind the hash. Right now its possible to do live streaming video's over swarm. Which can possibilly unleash us in creating much more sophisticated infrastructure which can help us in building a better `Web3.0.`
+
 
 
 
