@@ -40,6 +40,18 @@ Note: The major drawback in this approach is you cannot be able this for storing
 
 ![Image](https://github.com/sriharikapu/StatusIM-SwarmImplementation/blob/master/assets/skelton.gif?style=center)
 
+Rendering from Ethereum Swarm
+
+The most important thing is to [install](https://swarm-guide.readthedocs.io/en/latest/installation.html) swarm on your machine.
+
+Install go lang if you want to interact with the swarm directly
+
+Linux, macOS, and FreeBSD tarballs
+```
+tar -C /usr/local -xzf go$VERSION.$OS-$ARCH.tar.gz
+export PATH=$PATH:/usr/local/go/bin
+```
+
 
 # Tools used
 - Solidity
