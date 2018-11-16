@@ -4,7 +4,7 @@ A simple way to host static html webpages on Ethereum Smart contracts and Ethere
 ## Rendering from Ethereum Smart Contracts
 Navigate to ``` Ethereum Remix console ```
 
-Create a new Solidity file ``` SimpleStaticHTMLStorage ```
+Create a new Solidity file ``` SimpleStaticHTMLStorage.sol ```
 
 Copy the following code and paste it choose the compiler version 0.4.11
 ```
