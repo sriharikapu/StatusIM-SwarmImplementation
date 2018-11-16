@@ -151,14 +151,14 @@ For collaborating:
 - If you come accoss create issues Reach out to the community on [Gitter](https://gitter.im/ethereum/swarm)
 
 
-# Tools used
-- Solidity
+# Tools & Languages used
+- [Solidity](https://github.com/ethereum/solidity)
 - Stringify
-- ExpressJS
-- GoLang
-- Swarm
-- Remix
-- Rinkeby
-- Embark
-- Runkit
+- [ExpressJS](https://expressjs.com/)
+- [GoLang](https://golang.org/d)
+- [Swarm](https://swarm-gateways.net)
+- [Remix](https://remix.ethereum.org)
+- Rinkeby & Kovan
+- [Embark](https://embark.status.im/)
+- [Runkit](https://npm.runkit.com/)
 - [swarmgw](https://www.npmjs.com/package/swarmgw)
