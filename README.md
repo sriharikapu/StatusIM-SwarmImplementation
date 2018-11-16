@@ -40,7 +40,7 @@ Note: The major drawback in this approach is you cannot be able this for storing
 
 ![Image](https://github.com/sriharikapu/StatusIM-SwarmImplementation/blob/master/assets/skelton.gif?style=center)
 
-Rendering from Ethereum Swarm
+# Rendering from Ethereum Swarm
 
 The most important thing is to [install](https://swarm-guide.readthedocs.io/en/latest/installation.html) swarm on your machine.
 
@@ -51,6 +51,9 @@ Linux, macOS, and FreeBSD tarballs
 tar -C /usr/local -xzf go$VERSION.$OS-$ARCH.tar.gz
 export PATH=$PATH:/usr/local/go/bin
 ```
+You can check if your swarm is running or not 
+
+![Image](https://github.com/sriharikapu/StatusIM-SwarmImplementation/blob/master/assets/Screen%20Shot%202018-11-16%20at%2011.02.59%20AM.png?raw=true)
 
 
 # Tools used
