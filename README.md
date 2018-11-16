@@ -1,7 +1,7 @@
 # Status.im Swarm Implementation
 A simple way to host static html webpages on Ethereum Smart contracts and Ethereum swarm. In this project I focused on implementing the rendering of static html web pages from Ethereum Smart Contracts and Ethereum Swarm. 
 
-## Rendering from Ethereum Smart Contracts
+## Rendering from Ethereum Smart Contracts [Not Recommended]
 Navigate to ``` Ethereum Remix console ```
 
 Create a new Solidity file ``` SimpleStaticHTMLStorage.sol ```
@@ -40,7 +40,7 @@ Note: The major drawback in this approach is you cannot be able this for storing
 
 ![Image](https://github.com/sriharikapu/StatusIM-SwarmImplementation/blob/master/assets/skelton.gif?style=center)
 
-# Rendering from Ethereum Swarm
+# Rendering from Ethereum Swarm [Recommended - provided you know GO lang basics]
 
 The most important thing is to [install](https://swarm-guide.readthedocs.io/en/latest/installation.html) swarm on your machine.
 
@@ -101,7 +101,7 @@ Compile the file cross weather the code is working fine or not
 go tool compile swarm_upload.go 
 go run swarm_upload.go
 ```
-
+# Alternative Approach [Recommended]
 Alternatively In this Project I used [Swarmgw](https://www.npmjs.com/package/swarmgw) For accomlising the task of rendering the static html page on a web browser.
 
 Lets get started. Inorder for you to access the swarm ther are two ways. Either you connect to the swarm gateways or you run your own swarm locally or on a server. In the above case I used a Tier 4 AWS linux server for my testing. But this time we can do it in a much simpler way. Firstly
