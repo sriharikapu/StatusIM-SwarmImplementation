@@ -61,4 +61,4 @@ export PATH=$PATH:/usr/local/go/bin
 - Rinkeby
 - Embark
 - Runkit
-- swarmgw [Node module]
+- [swarmgw](https://www.npmjs.com/package/swarmgw)
