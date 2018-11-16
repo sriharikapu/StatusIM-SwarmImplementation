@@ -96,10 +96,57 @@ func main() {
     fmt.Println(string(content)) // hello world
 }
 ```
+Compile the file cross weather the code is working fine or not
+```
+go tool compile swarm_upload.go 
+go run swarm_upload.go
+```
+
+Alternatively In this Project I used [Swarmgw](https://www.npmjs.com/package/swarmgw) For accomlising the task of rendering the static html page on a web browser.
+
+Lets get started. Inorder for you to access the swarm ther are two ways. Either you connect to the swarm gateways or you run your own swarm locally or on a server. In the above case I used a Tier 4 AWS linux server for my testing. But this time we can do it in a much simpler way. Firstly
+```
+mkdir SwarmTest
+cd SwarmTest
+```
+Now clone the repo
+```
+https://github.com/sriharikapu/StatusIM-SwarmImplementation.git
+cd StatusIM-SwarmImplementation
+cd src
+```
+Now install the node js dependencies
+```
+sudo npm install
+sudo npm install -g pm2 
+sudo npm install -g expressjs
+sudo npm install -g swarmgw
+```
+We can start ```render.js``` using the process manager pm2. In order to access the html code via localhost
+```
+pm2 start render.js
+```
+![Image](https://github.com/sriharikapu/StatusIM-SwarmImplementation/blob/master/assets/Screen%20Shot%202018-11-16%20at%202.33.00%20PM.png?raw=true)
+
+For a quick testing you can open the Insomnia / Postman and make a GET request at ```http://localhost:8080``` or you can use your web browser.
+
+![Images](https://github.com/sriharikapu/StatusIM-SwarmImplementation/blob/master/assets/Screen%20Shot%202018-11-16%20at%202.36.36%20PM.png?raw=true)
+
+Common Errors That I came accross: 
+- Manifest 441235131a5120fa is malformed: invalid character '<' looking for beginning of value
+- swarm: unrecognized option '--bzzaccount'
+- swarm_upload.go:8:5: can't find import: "github.com/ethereum/go-ethereum/swarm/api/client"
+- swarm: unrecognized option '--ens-api'
+- Error: Illegal header line in fasta file.
+
+
+
 
 # Tools used
 - Solidity
 - Stringify
+- ExpressJS
+- GoLang
 - Swarm
 - Remix
 - Rinkeby
