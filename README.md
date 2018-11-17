@@ -158,6 +158,12 @@ For collaborating:
 - Fork the code and create pull request.
 - If you come accoss create issues Reach out to the community on [Gitter](https://gitter.im/ethereum/swarm)
 
+# Final Result 
+
+Fell free to check out [status.im on swarm.](https://swarm-gateways.net/bzz:/8ee1c7297f606b00a7b0925e0159a9ac8f7ef89cb111875660501bb0bbc5fdea/)
+
+![Image](https://github.com/sriharikapu/StatusIM-SwarmImplementation/blob/master/Screen%20Shot%202018-11-17%20at%2010.01.14%20PM.png?raw=true)
+
 
 # Tools & Languages used
 - [Solidity](https://github.com/ethereum/solidity)
@@ -170,3 +176,5 @@ For collaborating:
 - [Embark](https://embark.status.im/)
 - [Runkit](https://npm.runkit.com/)
 - [swarmgw](https://www.npmjs.com/package/swarmgw)
+
+Thanks to [andytudhope](https://github.com/andytudhope)  & [jacqueswww](https://github.com/jacqueswww)
