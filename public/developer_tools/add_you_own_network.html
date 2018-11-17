@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head prefix="og: http://ogp.me/ns#"><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="utf-8">
+  <title>How To Add Your Own Custom Network To Status | Status</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Canonical links -->
+  <link rel="canonical" href="https://dev.status.im/developer_tools/add_you_own_network.html">
+  <!-- Alternative links -->
+  
+    
+      <link rel="alternative" hreflang="en" href="https://dev.status.im/developer_tools/add_you_own_network.html">
+    
+      <link rel="alternative" hreflang="es" href="https://dev.status.im/es/developer_tools/add_you_own_network.html">
+    
+      <link rel="alternative" hreflang="ko" href="https://dev.status.im/ko/developer_tools/add_you_own_network.html">
+    
+  
+  <!-- Icon -->
+  <link rel="icon" type="image/png" href="/img/logo-16.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="/img/logo-32.png" sizes="32x32">
+
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/apple-touch-icon-76.png?v=0.0.5">
+  <link rel="apple-touch-icon" sizes="120x120" href="/img/apple-touch-icon-120.png?v=0.0.5">
+  <link rel="apple-touch-icon" sizes="152x152" href="/img/apple-touch-icon-152.png?v=0.0.5">
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon-180.png?v=0.0.5">
+  <link rel="apple-touch-icon" href="/img/apple-touch-icon-1024.png?v=0.0.5">
+  <link rel="stylesheet" href="/css/main.min.css">
+  <link rel="alternate" href="/atom.xml" title="Status">
+  <meta property="og:image" content="/img/share.png">
+  <meta property="og:title" content="Status, a Mobile Client for Ethereum 2.0">
+</head>
+
+<body>
+  <div id="container">
+    
+      <div class="header">
+    <div class="header-left">
+        <a class="logo" href="/"></a>
+        
+    </div>
+    <div class="header-right">
+        <a href="https://get.status.im/chat/public/status" class="button">Join Status Chat</a>
+    </div>
+</div>
+
+<div class="mobile-nav-wrap">
+    <div class="mobile-nav-inner">
+        <a class="logo" href="/"></a>
+        <a class="icon-close mobile-nav-close" href="#"></a>
+        <ul class="mobile-nav">
+            <li><a href="https://our.status.im/">Blog</a></li>
+            <li><a href="/docs">Docs</a></li>
+            <li class="item--dropdown item--to-show">
+              <span>Projects</span>
+              <ul class="mobile-sub-nav">
+                <li><a href="https://incubate.status.im/" class="">Incubate</a></li>
+                <li><a href="https://nimbus.status.im/" class="">Nimbus</a></li>
+                <li><a href="https://embark.status.im/" class="">Embark</a></li>
+                <li><a href="https://studio.status.im/" class="">Studio</a></li>
+                <li><a href="https://hardwallet.status.im/" class="">Hardwallet</a></li>
+              </ul>
+            </li>
+            <li><a href="/contribute" class="">Contribute</a></li>
+        </ul>
+        <div class="mobile-nav-footer">
+            <a href="https://get.status.im/chat/public/status" class="button button--blue">Join Status Chat</a>
+        </div>
+    </div>
+    <div class="mobile-nav-overlay"></div>
+</div>
+
+<div class="popup-wrap popup-wrap--community">
+    <div class="popup popup--community">
+        <a class="popup__button popup__button--close"></a>
+        <h3 class="popup__title">Community</h3>
+        <div class="popup__inner">
+            <div class="cards cards--three cards--three--even cards--community cards--community--light">
+                <div class="card">
+                    <a href="https://get.status.im/chat/public/status" class="card-inner">
+                        <div class="community-icon community-icon--join"></div>
+                        <h4>Join the chat in Status</h4>
+                        <p class="secondary-text">Whisper sweet, encrypted nothings on a distributed network that no-one owns.</p>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="https://discuss.status.im/" class="card-inner">
+                        <div class="community-icon community-icon--discussion"></div>
+                        <h4>Join the Discussion</h4>
+                        <p class="secondary-text">Join longer discussions, work in progress, and our research here.</p>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="https://github.com/status-im/" class="card-inner">
+                        <div class="community-icon community-icon--contrubute"></div>
+                        <h4>Contribute to our Repos</h4>
+                        <p class="secondary-text">Help us #buidl the future by getting involved in the most active code base in Ethereum.</p>
+                    </a>
+                </div>
+            </div>
+            <h5>Find Out More</h5>
+            <div class="cards cards-community-more cards--three cards--three--even">
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-content">
+                            <div class="latest-posts"></div>
+                        </div>
+                        <div class="card-community-more__link"><a href="https://our.status.im/" class="link-arrow">Learn more</a></div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-content">
+                            <h4>Life at Status</h4>
+                            <p class="secondary-text">What's it like to live the decentralized lifestyle? Find out here.</p>
+                        </div>
+                        <div class="card-community-more__link"><a href="/contribute" class="link-arrow">Learn more</a></div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-content">
+                            <h4>Follow us on Twitter</h4>
+                            <p class="secondary-text">Join the conversation on our social channels to learn more.</p>
+                        </div>
+                        <div class="card-community-more__link"><a href="https://twitter.com/ethstatus/" class="link-arrow">Learn more</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup-overlay"></div>
+</div>
+
+<div class="popup-wrap popup-wrap--projects">
+    <div class="popup popup--projects">
+        <a class="popup__button popup__button--close"></a>
+        <h3 class="popup__title">Projects</h3>
+        <div class="popup__inner">
+            <h5>Help us #buidl</h5>
+            <div class="cards cards-community-more cards--three cards--three--even">
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-content">
+                            <h4>Embark</h4>
+                            <p class="secondary-text">Embark is a simple and easy to use development framework that enables you to build and deploy your own decentralized applications smoothly.</p>
+                        </div>
+                        <div class="card-community-more__link"><a href="https://embark.status.im/" class="link-arrow">Learn more</a></div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-content">
+                            <h4>Nimbus</h4>
+                            <p class="secondary-text">A research project and light client for Ethereum 2.0 designed to perform well on embedded systems and resource-restricted hardware.</p>
+                        </div>
+                        <div class="card-community-more__link"><a href="https://nimbus.status.im" class="link-arrow">Learn more</a></div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-content">
+                            <h4>Status Studio</h4>
+                            <p class="secondary-text">Studio is an integrated developer environment and educational platform designed to be a one-stop-shop for ÐApp development.</p>
+                        </div>
+                        <div class="card-community-more__link"><a href="https://studio.status.im" class="link-arrow">Learn more</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="separator"></div>
+            <h5>Tools for Everyone</h5>
+            <div class="cards cards-community-more cards--three cards--three--even">
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-content">
+                            <h4>Incubate</h4>
+                            <p class="secondary-text">Incubate supports open source, early stage startups with funding, technical mentorship, legal and regulatory compliance and much more.</p>
+                        </div>
+                        <div class="card-community-more__link"><a href="https://incubate.status.im/" class="link-arrow">Learn more</a></div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-content">
+                            <h4>Status Hardwallet</h4>
+                            <p class="secondary-text">A hardware wallet in the form of a card with a safe, contactless transaction experience</p>
+                        </div>
+                        <div class="card-community-more__link"><a href="https://hardwallet.status.im/" class="link-arrow">Learn more</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup-overlay"></div>
+</div>
+
+    
+    <div class="page-intro wrapper">
+  <header class="article-header">
+    <h1 class="article-title" itemprop="name">How To Add Your Own Custom Network To Status</h1>
+    <a href="https://github.com/status-im/docs.status.im/edit/develop/source/developer_tools/add_you_own_network.md" class="article-edit-link" title="Improve this doc">Edit on Github</a>
+  </header>
+</div>
+<div id="content-wrap">
+  <div id="content" class="wrapper">
+    <div id="content-inner">
+      <aside id="sidebar" role="navigation">
+  <div class="inner">
+    <strong class="sidebar-title">Web3 For Everyone</strong><a href="index.html" class="sidebar-link">Status Developer Tools</a><strong class="sidebar-title">Connecting to web3</strong><a href="access_eth_provider.html" class="sidebar-link">Accessing Web3 Providers</a><a href="detecting_status.html" class="sidebar-link">Detecting Status</a><strong class="sidebar-title">Optimizing for Mobile</strong><a href="assets_guidelines.html" class="sidebar-link">Assets and Guidelines</a><a href="status_web_api.html" class="sidebar-link">JavaScript API</a><a href="http_debugging.html" class="sidebar-link">How to Test & Debug</a><strong class="sidebar-title">Submitting Your DApp</strong><a href="add_your_dapp.html" class="sidebar-link">How To Submit</a><a href="troubleshooting_dapps.html" class="sidebar-link">Troubleshooting</a><strong class="sidebar-title">Adapt Status To Your Needs</strong><a href="enable_chat.html" class="sidebar-link">Add Your Own Chat</a><a href="add_your_own_network.html" class="sidebar-link">Add Your Own Network</a><strong class="sidebar-title">Extensions [WIP]</strong><a href="../extensions/" class="sidebar-link">Introduction</a><strong class="sidebar-title">Fiddle</strong><a href="/fiddle/" class="sidebar-link">Status Fiddle</a><strong class="sidebar-title">Storybook</strong><a href="https://status-im.github.io/storybook/" class="sidebar-link">Status React Storybook</a>
+  </div>
+</aside>
+      <article class="article-container" itemscope="" itemtype="http://schema.org/Article">
+        <div class="article-inner">
+          <div class="article">
+            <div class="inner">
+              <div class="article-content" itemprop="articleBody">
+                <h1 id="Adapt-Status-For-Your-Own-Needs" class="article-heading"><a href="#Adapt-Status-For-Your-Own-Needs" class="headerlink" title="Adapt Status For Your Own Needs"></a>Adapt Status For Your Own Needs<a class="article-anchor" href="#Adapt-Status-For-Your-Own-Needs" aria-hidden="true"></a></h1><p>This article lists and explains all the steps needed to add a new network to Status (e.g. side chain or a test network). We want anyone, on any Ethereum-like network to have direct access to a powerful mobile client that they can just use (TM) without having to worry about anything more than providing an alternative RPC endpoint. </p>
+<p>We have already <a href="https://github.com/status-im/status-react/issues/6250" target="_blank" rel="noopener">implemented this with POA</a>, for both the xDAI and POA sidechains, and look forward to a future where a thousand blockchains bloom, all from your pocket.</p>
+<p>Overview:</p>
+<ol>
+<li>Add the network info to <code>status-im.constants</code></li>
+<li>Add the chain id and name to <code>status-im.utils.ethereum.core</code></li>
+<li>Add the native currency info to <code>status-im.utils.ethereum.tokens</code></li>
+<li>Add the native currency icon to <code>resources/images/tokens/NETWORK/0-native.png</code></li>
+<li>Add a migration to add new networks to existing accounts upon upgrade</li>
+</ol>
+<h1 id="Detailed-walkthrough" class="article-heading"><a href="#Detailed-walkthrough" class="headerlink" title="Detailed walkthrough"></a>Detailed walkthrough<a class="article-anchor" href="#Detailed-walkthrough" aria-hidden="true"></a></h1><h2 id="1-add-network-info-to-status-im-constants" class="article-heading"><a href="#1-add-network-info-to-status-im-constants" class="headerlink" title="1. add network info to status-im.constants"></a>1. add network info to <code>status-im.constants</code><a class="article-anchor" href="#1-add-network-info-to-status-im-constants" aria-hidden="true"></a></h2><p>Add a new entry to the map which contains all our current networks. The key should be a string representation of the internal network id, e.g. “xdai_rpc”. The value should be the network configuration object, e.g.:</p>
+<pre><code class="clojure">{:id     &quot;xdai_rpc&quot;,
+ :name   &quot;xDai Chain&quot;,
+ :config {:NetworkId      (ethereum/chain-keyword-&gt;chain-id :xdai)
+          :DataDir        &quot;/ethereum/xdai_rpc&quot;
+          :UpstreamConfig {:Enabled true
+                           :URL     &quot;https://dai.poa.network&quot;}}}
+</code></pre>
+<p>By convention, we use the <code>_rpc</code> suffix for all networks that access their blockchain data via upstream RPC. For full or LES access, we should omit this suffix, e.g just <code>&quot;mainnet&quot;</code> as opposed to <code>&quot;mainnet_rpc&quot;</code>. This only applies to the network identifier - the chain identifier should not contain any suffixes.</p>
+<h2 id="2-add-chain-id-and-name-to-status-im-utils-ethereum-core" class="article-heading"><a href="#2-add-chain-id-and-name-to-status-im-utils-ethereum-core" class="headerlink" title="2. add chain id and name to status-im.utils.ethereum.core"></a>2. add chain id and name to <code>status-im.utils.ethereum.core</code><a class="article-anchor" href="#2-add-chain-id-and-name-to-status-im-utils-ethereum-core" aria-hidden="true"></a></h2><p>There is a mapping between internal ids (as keywords) and numerical chain ids in this namespace. Add the new network info as per this example:</p>
+<pre><code class="clojure">(def chains
+  {:mainnet {:id 1 :name &quot;Mainnet&quot;}
+   :testnet {:id 3 :name &quot;Ropsten&quot;}
+   :rinkeby {:id 4 :name &quot;Rinkeby&quot;}
+   :xdai    {:id 100 :name &quot;xDai&quot;}
+   :poa     {:id 99 :name &quot;POA&quot;}})
+</code></pre>
+<p>The internal keyword id is arbitrary and you can choose whatever makes sense. On the other hand, the numerical id should be the same as the one actually used by the chain in question. You can check the value by calling <code>web3.version.getNetwork()</code>. If the incorrect id has been configured, there will be an error during the Ethereum node initialization (right after login).</p>
+<h2 id="3-add-native-currency-info-to-status-im-utils-ethereum-tokens" class="article-heading"><a href="#3-add-native-currency-info-to-status-im-utils-ethereum-tokens" class="headerlink" title="3. add native currency info to status-im.utils.ethereum.tokens"></a>3. add native currency info to <code>status-im.utils.ethereum.tokens</code><a class="article-anchor" href="#3-add-native-currency-info-to-status-im-utils-ethereum-tokens" aria-hidden="true"></a></h2><p>If your native currency has a name and symbol other than Ether and ETH, then this needs to be set up. For example, the xDAI Chain native currency is called xDAI, so we set that up by adding a new entry to the native currency map, where the chain id is the key and the following is value:</p>
+<pre><code class="clojure">{:name            &quot;xDAI&quot;
+ :symbol          :ETH
+ :symbol-display  :xDAI
+ :symbol-exchange :DAI
+ :decimals        18}
+</code></pre>
+<ul>
+<li><code>name</code> - full display name of the given currency</li>
+<li><code>symbol</code> - internal symbol key, always <code>ETH</code> for native currencies</li>
+<li><code>symbol-display</code> - the value of symbol as it is displayed in Wallet screens, chat messages, etc.</li>
+<li><code>symbol-exchange</code> - the symbol used as the ticker on exchange services to represent the given currency, e.g. <code>xDAI</code> represents the native currency of xDAI Chain, however it is listed as DAI on cryptocompare.</li>
+</ul>
+<h2 id="4-add-native-currency-icon-to-resources-images-tokens-NETWORK-0-native-png" class="article-heading"><a href="#4-add-native-currency-icon-to-resources-images-tokens-NETWORK-0-native-png" class="headerlink" title="4. add native currency icon to resources/images/tokens/NETWORK/0-native.png"></a>4. add native currency icon to <code>resources/images/tokens/NETWORK/0-native.png</code><a class="article-anchor" href="#4-add-native-currency-icon-to-resources-images-tokens-NETWORK-0-native-png" aria-hidden="true"></a></h2><p>If the native currency icon is different that the default Ether icon, then the resource file needs to be added to the project. Since there is only one native currency per chain, the file name will always be <code>0-native.png</code> - it only needs to be located in the correct directory for that chain.</p>
+<h2 id="5-add-a-migration-to-add-new-networks-to-existing-accounts-upon-upgrade" class="article-heading"><a href="#5-add-a-migration-to-add-new-networks-to-existing-accounts-upon-upgrade" class="headerlink" title="5. add a migration to add new networks to existing accounts upon upgrade"></a>5. add a migration to add new networks to existing accounts upon upgrade<a class="article-anchor" href="#5-add-a-migration-to-add-new-networks-to-existing-accounts-upon-upgrade" aria-hidden="true"></a></h2><p>Correction - we’ll change the model in such a way so that we can remove the need for this migration. See <a href="https://github.com/status-im/status-react/issues/6491" target="_blank" rel="noopener">#6491</a></p>
+<p>That’s it! If you have any questions or remarks, please find us in the <a href="https://get.status.im/chat/public/status-core-devs" target="_blank" rel="noopener">status developer channel</a>. Hopefully, we’ll simplify this process soon enough.</p>
+
+              </div>
+              <footer class="article-footer">
+                <time class="article-footer-updated" datetime="2018-11-17T09:48:12.029Z" itemprop="dateModified">Last updated: 2018-11-17</time>
+                <a href="index.html" class="article-footer-next" title="Status Developer Tools"><span>Next</span><i class="fa fa-chevron-right"></i></a>
+              </footer>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</div>
+
+    
+      
+    
+  </div>
+  
+</body>
+</html>

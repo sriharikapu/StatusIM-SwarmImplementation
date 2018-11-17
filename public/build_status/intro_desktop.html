@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head prefix="og: http://ogp.me/ns#"><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="utf-8">
+  <title>Getting Set Up to Work With React-native-qt | Status</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Canonical links -->
+  <link rel="canonical" href="https://dev.status.im/build_status/intro_desktop.html">
+  <!-- Alternative links -->
+  
+    
+      <link rel="alternative" hreflang="en" href="https://dev.status.im/build_status/intro_desktop.html">
+    
+      <link rel="alternative" hreflang="es" href="https://dev.status.im/es/build_status/intro_desktop.html">
+    
+      <link rel="alternative" hreflang="ko" href="https://dev.status.im/ko/build_status/intro_desktop.html">
+    
+  
+  <!-- Icon -->
+  <link rel="icon" type="image/png" href="/img/logo-16.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="/img/logo-32.png" sizes="32x32">
+
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/apple-touch-icon-76.png?v=0.0.5">
+  <link rel="apple-touch-icon" sizes="120x120" href="/img/apple-touch-icon-120.png?v=0.0.5">
+  <link rel="apple-touch-icon" sizes="152x152" href="/img/apple-touch-icon-152.png?v=0.0.5">
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon-180.png?v=0.0.5">
+  <link rel="apple-touch-icon" href="/img/apple-touch-icon-1024.png?v=0.0.5">
+  <link rel="stylesheet" href="/css/main.min.css">
+  <link rel="alternate" href="/atom.xml" title="Status">
+  <meta property="og:image" content="/img/share.png">
+  <meta property="og:title" content="Status, a Mobile Client for Ethereum 2.0">
+</head>
+
+<body>
+  <div id="container">
+    
+      <div class="header">
+    <div class="header-left">
+        <a class="logo" href="/"></a>
+        
+    </div>
+    <div class="header-right">
+        <a href="https://get.status.im/chat/public/status" class="button">Join Status Chat</a>
+    </div>
+</div>
+
+<div class="mobile-nav-wrap">
+    <div class="mobile-nav-inner">
+        <a class="logo" href="/"></a>
+        <a class="icon-close mobile-nav-close" href="#"></a>
+        <ul class="mobile-nav">
+            <li><a href="https://our.status.im/">Blog</a></li>
+            <li><a href="/docs">Docs</a></li>
+            <li class="item--dropdown item--to-show">
+              <span>Projects</span>
+              <ul class="mobile-sub-nav">
+                <li><a href="https://incubate.status.im/" class="">Incubate</a></li>
+                <li><a href="https://nimbus.status.im/" class="">Nimbus</a></li>
+                <li><a href="https://embark.status.im/" class="">Embark</a></li>
+                <li><a href="https://studio.status.im/" class="">Studio</a></li>
+                <li><a href="https://hardwallet.status.im/" class="">Hardwallet</a></li>
+              </ul>
+            </li>
+            <li><a href="/contribute" class="">Contribute</a></li>
+        </ul>
+        <div class="mobile-nav-footer">
+            <a href="https://get.status.im/chat/public/status" class="button button--blue">Join Status Chat</a>
+        </div>
+    </div>
+    <div class="mobile-nav-overlay"></div>
+</div>
+
+<div class="popup-wrap popup-wrap--community">
+    <div class="popup popup--community">
+        <a class="popup__button popup__button--close"></a>
+        <h3 class="popup__title">Community</h3>
+        <div class="popup__inner">
+            <div class="cards cards--three cards--three--even cards--community cards--community--light">
+                <div class="card">
+                    <a href="https://get.status.im/chat/public/status" class="card-inner">
+                        <div class="community-icon community-icon--join"></div>
+                        <h4>Join the chat in Status</h4>
+                        <p class="secondary-text">Whisper sweet, encrypted nothings on a distributed network that no-one owns.</p>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="https://discuss.status.im/" class="card-inner">
+                        <div class="community-icon community-icon--discussion"></div>
+                        <h4>Join the Discussion</h4>
+                        <p class="secondary-text">Join longer discussions, work in progress, and our research here.</p>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="https://github.com/status-im/" class="card-inner">
+                        <div class="community-icon community-icon--contrubute"></div>
+                        <h4>Contribute to our Repos</h4>
+                        <p class="secondary-text">Help us #buidl the future by getting involved in the most active code base in Ethereum.</p>
+                    </a>
+                </div>
+            </div>
+            <h5>Find Out More</h5>
+            <div class="cards cards-community-more cards--three cards--three--even">
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-content">
+                            <div class="latest-posts"></div>
+                        </div>
+                        <div class="card-community-more__link"><a href="https://our.status.im/" class="link-arrow">Learn more</a></div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-content">
+                            <h4>Life at Status</h4>
+                            <p class="secondary-text">What's it like to live the decentralized lifestyle? Find out here.</p>
+                        </div>
+                        <div class="card-community-more__link"><a href="/contribute" class="link-arrow">Learn more</a></div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-content">
+                            <h4>Follow us on Twitter</h4>
+                            <p class="secondary-text">Join the conversation on our social channels to learn more.</p>
+                        </div>
+                        <div class="card-community-more__link"><a href="https://twitter.com/ethstatus/" class="link-arrow">Learn more</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup-overlay"></div>
+</div>
+
+<div class="popup-wrap popup-wrap--projects">
+    <div class="popup popup--projects">
+        <a class="popup__button popup__button--close"></a>
+        <h3 class="popup__title">Projects</h3>
+        <div class="popup__inner">
+            <h5>Help us #buidl</h5>
+            <div class="cards cards-community-more cards--three cards--three--even">
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-content">
+                            <h4>Embark</h4>
+                            <p class="secondary-text">Embark is a simple and easy to use development framework that enables you to build and deploy your own decentralized applications smoothly.</p>
+                        </div>
+                        <div class="card-community-more__link"><a href="https://embark.status.im/" class="link-arrow">Learn more</a></div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-content">
+                            <h4>Nimbus</h4>
+                            <p class="secondary-text">A research project and light client for Ethereum 2.0 designed to perform well on embedded systems and resource-restricted hardware.</p>
+                        </div>
+                        <div class="card-community-more__link"><a href="https://nimbus.status.im" class="link-arrow">Learn more</a></div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-content">
+                            <h4>Status Studio</h4>
+                            <p class="secondary-text">Studio is an integrated developer environment and educational platform designed to be a one-stop-shop for ÐApp development.</p>
+                        </div>
+                        <div class="card-community-more__link"><a href="https://studio.status.im" class="link-arrow">Learn more</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="separator"></div>
+            <h5>Tools for Everyone</h5>
+            <div class="cards cards-community-more cards--three cards--three--even">
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-content">
+                            <h4>Incubate</h4>
+                            <p class="secondary-text">Incubate supports open source, early stage startups with funding, technical mentorship, legal and regulatory compliance and much more.</p>
+                        </div>
+                        <div class="card-community-more__link"><a href="https://incubate.status.im/" class="link-arrow">Learn more</a></div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-content">
+                            <h4>Status Hardwallet</h4>
+                            <p class="secondary-text">A hardware wallet in the form of a card with a safe, contactless transaction experience</p>
+                        </div>
+                        <div class="card-community-more__link"><a href="https://hardwallet.status.im/" class="link-arrow">Learn more</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup-overlay"></div>
+</div>
+
+    
+    <div class="page-intro wrapper">
+  <header class="article-header">
+    <h1 class="article-title" itemprop="name">Getting Set Up to Work With React-native-qt</h1>
+    <a href="https://github.com/status-im/docs.status.im/edit/develop/source/build_status/intro_desktop.md" class="article-edit-link" title="Improve this doc">Edit on Github</a>
+  </header>
+</div>
+<div id="content-wrap">
+  <div id="content" class="wrapper">
+    <div id="content-inner">
+      <aside id="sidebar" role="navigation">
+  <div class="inner">
+    <strong class="sidebar-title">Build Status Yourself</strong><a href="index.html" class="sidebar-link">Be a Part of a Better Web</a><a href="status_go.html" class="sidebar-link">Build Status-Go</a><strong class="sidebar-title">Status Desktop</strong><a href="intro_desktop.html" class="sidebar-link current">Getting Setup</a><a href="desktop.html" class="sidebar-link">Build Desktop</a><a href="desktop_troubleshooting.html" class="sidebar-link">Troubleshooting</a><a href="desktop_google_breakpad.html" class="sidebar-link">Google Breakpad Integration</a><a href="desktop_jenkins.html" class="sidebar-link">Jenkins Setup</a>
+  </div>
+</aside>
+      <article class="article-container" itemscope="" itemtype="http://schema.org/Article">
+        <div class="article-inner">
+          <div class="article">
+            <div class="inner">
+              <div class="article-content" itemprop="articleBody">
+                <p>When you create a project with <code>react-native init SomeProject</code>, you have ios and android-specific files generated immediately. To add desktop platform files, you have to invoke <code>react-native desktop</code> command (in your project folder). <code>SomeProject/desktop</code> folder generated then. It contains <code>CMakeLists.txt</code> for building desktop Qt application.</p>
+<h2 id="Participants" class="article-heading"><a href="#Participants" class="headerlink" title="Participants"></a>Participants<a class="article-anchor" href="#Participants" aria-hidden="true"></a></h2><p>There are 3 participants in react-native-desktop application:</p>
+<ul>
+<li>Qt application</li>
+<li>Bundler</li>
+<li>JS server (right now called ubuntu-server, but this is subject to change)</li>
+</ul>
+<p><code>Qt application</code> - built from a project in <code>desktop</code> folder. When runs it establishes communication with JS server and shows appropriate UI. </p>
+<p><code>Bundler</code> - this server runs on developer’s machine and provides access to js files from the project. Also, it can generate “bundle” - single js file with all project code in it. Not needed for distribution. </p>
+<p><code>JS server</code> - provides a sandbox for running javascript project code. It communicates with Qt Application.</p>
+<h2 id="Steps-on-app-start" class="article-heading"><a href="#Steps-on-app-start" class="headerlink" title="Steps on app start"></a>Steps on app start<a class="article-anchor" href="#Steps-on-app-start" aria-hidden="true"></a></h2><p><img src="/docs/assets/react-native-desktop-workflow.svg" alt=""></p>
+<h2 id="Components-Support" class="article-heading"><a href="#Components-Support" class="headerlink" title="Components Support"></a>Components Support<a class="article-anchor" href="#Components-Support" aria-hidden="true"></a></h2><table>
+<thead>
+<tr>
+<th>React Native</th>
+<th>React Native Desktop</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Components</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>ActivityIndicator</td>
+<td>+/-</td>
+</tr>
+<tr>
+<td>Button</td>
+<td>+/-</td>
+</tr>
+<tr>
+<td>DatePickerIOS</td>
+<td></td>
+</tr>
+<tr>
+<td>DrawerLayoutAndroid</td>
+<td></td>
+</tr>
+<tr>
+<td>FlatList</td>
+<td></td>
+</tr>
+<tr>
+<td>Image</td>
+<td>+/-</td>
+</tr>
+<tr>
+<td>KeyboardAvoidingView</td>
+<td></td>
+</tr>
+<tr>
+<td>ListView</td>
+<td>+/-</td>
+</tr>
+<tr>
+<td>Modal</td>
+<td>+/-</td>
+</tr>
+<tr>
+<td>NavigatorIOS</td>
+<td></td>
+</tr>
+<tr>
+<td>Picker</td>
+<td>+/-</td>
+</tr>
+<tr>
+<td>PickerIOS</td>
+<td></td>
+</tr>
+<tr>
+<td>ProgressBarAndroid</td>
+<td></td>
+</tr>
+<tr>
+<td>ProgressViewIOS</td>
+<td></td>
+</tr>
+<tr>
+<td>RefreshControl</td>
+<td></td>
+</tr>
+<tr>
+<td>ScrollView</td>
+<td>+/-</td>
+</tr>
+<tr>
+<td>SectionList</td>
+<td></td>
+</tr>
+<tr>
+<td>SegmentedControlIOS</td>
+<td></td>
+</tr>
+<tr>
+<td>Slider</td>
+<td></td>
+</tr>
+<tr>
+<td>SnapshotViewIOS</td>
+<td></td>
+</tr>
+<tr>
+<td>StatusBar</td>
+<td></td>
+</tr>
+<tr>
+<td>Switch</td>
+<td></td>
+</tr>
+<tr>
+<td>TabBarIOS</td>
+<td></td>
+</tr>
+<tr>
+<td>TabBarIOS.Item</td>
+<td></td>
+</tr>
+<tr>
+<td>Text</td>
+<td>+/-</td>
+</tr>
+<tr>
+<td>TextInput</td>
+<td>+/-</td>
+</tr>
+<tr>
+<td>ToolbarAndroid</td>
+<td></td>
+</tr>
+<tr>
+<td>TouchableHighlight</td>
+<td>+/-</td>
+</tr>
+<tr>
+<td>TouchableNativeFeedback</td>
+<td></td>
+</tr>
+<tr>
+<td>TouchableOpacity</td>
+<td>+/-</td>
+</tr>
+<tr>
+<td>TouchableWithoutFeedback</td>
+<td>+/-</td>
+</tr>
+<tr>
+<td>View</td>
+<td>+/-</td>
+</tr>
+<tr>
+<td>ViewPagerAndroid</td>
+<td></td>
+</tr>
+<tr>
+<td>VirtualizedList</td>
+<td></td>
+</tr>
+<tr>
+<td>WebView</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>APIs</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>AccessibilityInfo</td>
+<td></td>
+</tr>
+<tr>
+<td>ActionSheetIOS</td>
+<td></td>
+</tr>
+<tr>
+<td>AdSupportIOS</td>
+<td></td>
+</tr>
+<tr>
+<td>Alert</td>
+<td>+/-</td>
+</tr>
+<tr>
+<td>AlertIOS</td>
+<td></td>
+</tr>
+<tr>
+<td>Animated</td>
+<td></td>
+</tr>
+<tr>
+<td>AppRegistry</td>
+<td>+/-</td>
+</tr>
+<tr>
+<td>AppState</td>
+<td>+/-</td>
+</tr>
+<tr>
+<td>AsyncStorage</td>
+<td></td>
+</tr>
+<tr>
+<td>BackAndroid</td>
+<td></td>
+</tr>
+<tr>
+<td>BackHandler</td>
+<td></td>
+</tr>
+<tr>
+<td>CameraRoll</td>
+<td></td>
+</tr>
+<tr>
+<td>Clipboard</td>
+<td>+/-</td>
+</tr>
+<tr>
+<td>DatePickerAndroid</td>
+<td></td>
+</tr>
+<tr>
+<td>Dimensions</td>
+<td></td>
+</tr>
+<tr>
+<td>Easing</td>
+<td></td>
+</tr>
+<tr>
+<td>Geolocation</td>
+<td></td>
+</tr>
+<tr>
+<td>ImageEditor</td>
+<td></td>
+</tr>
+<tr>
+<td>ImagePickerIOS</td>
+<td></td>
+</tr>
+<tr>
+<td>ImageStore</td>
+<td></td>
+</tr>
+<tr>
+<td>InteractionManager</td>
+<td></td>
+</tr>
+<tr>
+<td>Keyboard</td>
+<td></td>
+</tr>
+<tr>
+<td>LayoutAnimation</td>
+<td></td>
+</tr>
+<tr>
+<td>Linking</td>
+<td></td>
+</tr>
+<tr>
+<td>NetInfo</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>PanResponder</td>
+<td></td>
+</tr>
+<tr>
+<td>PermissionsAndroid</td>
+<td></td>
+</tr>
+<tr>
+<td>PixelRatio</td>
+<td></td>
+</tr>
+<tr>
+<td>PushNotificationIOS</td>
+<td></td>
+</tr>
+<tr>
+<td>Settings</td>
+<td></td>
+</tr>
+<tr>
+<td>Share</td>
+<td></td>
+</tr>
+<tr>
+<td>StatusBarIOS</td>
+<td></td>
+</tr>
+<tr>
+<td>StyleSheet</td>
+<td></td>
+</tr>
+<tr>
+<td>Systrace</td>
+<td></td>
+</tr>
+<tr>
+<td>TimePickerAndroid</td>
+<td></td>
+</tr>
+<tr>
+<td>ToastAndroid</td>
+<td></td>
+</tr>
+<tr>
+<td>Vibration</td>
+<td></td>
+</tr>
+<tr>
+<td>VibrationIOS</td>
+<td></td>
+</tr>
+<tr>
+<td>Layout Props</td>
+<td></td>
+</tr>
+<tr>
+<td>Shadow Props</td>
+<td></td>
+</tr>
+<tr>
+<td>ViewPropTypes</td>
+<td></td>
+</tr>
+<tr>
+<td>ViewStylePropTypes</td>
+<td></td>
+</tr>
+<tr>
+<td>TextStylePropTypes</td>
+<td></td>
+</tr>
+<tr>
+<td>ImageStylePropTypes</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>From old React Native: </strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Navigator (v0.43)</td>
+</tr>
+</tbody>
+</table>
+
+              </div>
+              <footer class="article-footer">
+                <time class="article-footer-updated" datetime="2018-11-17T09:48:12.026Z" itemprop="dateModified">Last updated: 2018-11-17</time>
+                <a href="status_go.html" class="article-footer-prev" title="Build Status-Go"><i class="fa fa-chevron-left"></i><span>Prev</span></a><a href="desktop.html" class="article-footer-next" title="Build Desktop"><span>Next</span><i class="fa fa-chevron-right"></i></a>
+              </footer>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</div>
+
+    
+      
+    
+  </div>
+  
+</body>
+</html>

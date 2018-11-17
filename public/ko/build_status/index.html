@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head prefix="og: http://ogp.me/ns#"><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="utf-8">
+  <title>Build Status Yourself | Status</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Canonical links -->
+  <link rel="canonical" href="https://dev.status.im/ko/build_status/index.html">
+  <!-- Alternative links -->
+  
+  <!-- Icon -->
+  <link rel="icon" type="image/png" href="/img/logo-16.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="/img/logo-32.png" sizes="32x32">
+
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/apple-touch-icon-76.png?v=0.0.5">
+  <link rel="apple-touch-icon" sizes="120x120" href="/img/apple-touch-icon-120.png?v=0.0.5">
+  <link rel="apple-touch-icon" sizes="152x152" href="/img/apple-touch-icon-152.png?v=0.0.5">
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon-180.png?v=0.0.5">
+  <link rel="apple-touch-icon" href="/img/apple-touch-icon-1024.png?v=0.0.5">
+  <link rel="stylesheet" href="/css/main.min.css">
+  <link rel="alternate" href="/atom.xml" title="Status">
+  <meta property="og:image" content="/img/share.png">
+  <meta property="og:title" content="Status, a Mobile Client for Ethereum 2.0">
+</head>
+
+<body>
+  <div id="container">
+    
+      <div class="header">
+    <div class="header-left">
+        <a class="logo" href="/ko/"></a>
+        
+    </div>
+    <div class="header-right">
+        <a href="https://get.status.im/chat/public/status" class="button">Join Status Chat</a>
+    </div>
+</div>
+
+<div class="mobile-nav-wrap">
+    <div class="mobile-nav-inner">
+        <a class="logo" href="/ko/"></a>
+        <a class="icon-close mobile-nav-close" href="#"></a>
+        <ul class="mobile-nav">
+            <li><a href="https://our.status.im/">Blog</a></li>
+            <li><a href="/ko/docs">Docs</a></li>
+            <li class="item--dropdown item--to-show">
+              <span>Projects</span>
+              <ul class="mobile-sub-nav">
+                <li><a href="https://incubate.status.im/" class="">Incubate</a></li>
+                <li><a href="https://nimbus.status.im/" class="">Nimbus</a></li>
+                <li><a href="https://embark.status.im/" class="">Embark</a></li>
+                <li><a href="https://studio.status.im/" class="">Studio</a></li>
+                <li><a href="https://hardwallet.status.im/" class="">Hardwallet</a></li>
+              </ul>
+            </li>
+            <li><a href="/ko/contribute" class="">Contribute</a></li>
+        </ul>
+        <div class="mobile-nav-footer">
+            <a href="https://get.status.im/chat/public/status" class="button button--blue">Join Status Chat</a>
+        </div>
+    </div>
+    <div class="mobile-nav-overlay"></div>
+</div>
+
+<div class="popup-wrap popup-wrap--community">
+    <div class="popup popup--community">
+        <a class="popup__button popup__button--close"></a>
+        <h3 class="popup__title">Community</h3>
+        <div class="popup__inner">
+            <div class="cards cards--three cards--three--even cards--community cards--community--light">
+                <div class="card">
+                    <a href="https://get.status.im/chat/public/status" class="card-inner">
+                        <div class="community-icon community-icon--join"></div>
+                        <h4>Join the chat in Status</h4>
+                        <p class="secondary-text">Whisper sweet, encrypted nothings on a distributed network that no-one owns.</p>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="https://discuss.status.im/" class="card-inner">
+                        <div class="community-icon community-icon--discussion"></div>
+                        <h4>Join the Discussion</h4>
+                        <p class="secondary-text">Join longer discussions, work in progress, and our research here.</p>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="https://github.com/status-im/" class="card-inner">
+                        <div class="community-icon community-icon--contrubute"></div>
+                        <h4>Contribute to our Repos</h4>
+                        <p class="secondary-text">Help us #buidl the future by getting involved in the most active code base in Ethereum.</p>
+                    </a>
+                </div>
+            </div>
+            <h5>Find Out More</h5>
+            <div class="cards cards-community-more cards--three cards--three--even">
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-content">
+                            <div class="latest-posts"></div>
+                        </div>
+                        <div class="card-community-more__link"><a href="https://our.status.im/" class="link-arrow">Learn more</a></div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-content">
+                            <h4>Life at Status</h4>
+                            <p class="secondary-text">What's it like to live the decentralized lifestyle? Find out here.</p>
+                        </div>
+                        <div class="card-community-more__link"><a href="/ko/contribute" class="link-arrow">Learn more</a></div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-content">
+                            <h4>Follow us on Twitter</h4>
+                            <p class="secondary-text">Join the conversation on our social channels to learn more.</p>
+                        </div>
+                        <div class="card-community-more__link"><a href="https://twitter.com/ethstatus/" class="link-arrow">Learn more</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup-overlay"></div>
+</div>
+
+<div class="popup-wrap popup-wrap--projects">
+    <div class="popup popup--projects">
+        <a class="popup__button popup__button--close"></a>
+        <h3 class="popup__title">Projects</h3>
+        <div class="popup__inner">
+            <h5>Help us #buidl</h5>
+            <div class="cards cards-community-more cards--three cards--three--even">
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-content">
+                            <h4>Embark</h4>
+                            <p class="secondary-text">Embark is a simple and easy to use development framework that enables you to build and deploy your own decentralized applications smoothly.</p>
+                        </div>
+                        <div class="card-community-more__link"><a href="https://embark.status.im/" class="link-arrow">Learn more</a></div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-content">
+                            <h4>Nimbus</h4>
+                            <p class="secondary-text">A research project and light client for Ethereum 2.0 designed to perform well on embedded systems and resource-restricted hardware.</p>
+                        </div>
+                        <div class="card-community-more__link"><a href="https://nimbus.status.im" class="link-arrow">Learn more</a></div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-content">
+                            <h4>Status Studio</h4>
+                            <p class="secondary-text">Studio is an integrated developer environment and educational platform designed to be a one-stop-shop for ÐApp development.</p>
+                        </div>
+                        <div class="card-community-more__link"><a href="https://studio.status.im" class="link-arrow">Learn more</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="separator"></div>
+            <h5>Tools for Everyone</h5>
+            <div class="cards cards-community-more cards--three cards--three--even">
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-content">
+                            <h4>Incubate</h4>
+                            <p class="secondary-text">Incubate supports open source, early stage startups with funding, technical mentorship, legal and regulatory compliance and much more.</p>
+                        </div>
+                        <div class="card-community-more__link"><a href="https://incubate.status.im/" class="link-arrow">Learn more</a></div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-content">
+                            <h4>Status Hardwallet</h4>
+                            <p class="secondary-text">A hardware wallet in the form of a card with a safe, contactless transaction experience</p>
+                        </div>
+                        <div class="card-community-more__link"><a href="https://hardwallet.status.im/" class="link-arrow">Learn more</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup-overlay"></div>
+</div>
+
+    
+    <div class="page-intro wrapper">
+  <header class="docs-header">
+    <div class="docs-intro">
+      <h1>Build a Better Web</h1>
+      <p>Begin your journey to a more secure and distributed internet here.</p>
+      <br>
+    </div>
+    <ul>
+      <li>
+        <div class="inner">
+          <h3>Developer Tools</h3>
+          <p>JS API and Extensions</p>
+        </div>
+        <img src="../img/arrow_blue_shaded.svg">
+        <a href="/developer_tools/"></a>
+      </li>
+      <li>
+        <div class="inner">
+          <h3>Research</h3>
+          <p>Dive in! Learn more...</p>
+        </div>
+        <img src="../img/arrow_blue_shaded.svg">
+        <a href="/research/"></a>
+      </li>
+      <li>
+        <div class="inner">
+          <h3>Nightlies</h3>
+          <p>Get our latest builds</p>
+        </div>
+        <img src="../img/arrow_blue_shaded.svg">
+        <a href="../nightly/"></a>
+      </li>
+    </ul>
+  </header>
+</div>
+<div id="content-wrap">
+  <div id="content" class="wrapper">
+    <div id="content-inner">
+      <aside id="sidebar" role="navigation">
+  <div class="inner">
+    <strong class="sidebar-title">스테이터스를 직접 빌드하세요</strong><a href="index.html" class="sidebar-link current">더 발전된 웹의 구성원이 되어보세요</a><a href="status_go.html" class="sidebar-link">Status-Go 빌드</a><strong class="sidebar-title">스테이터스 데스크탑</strong><a href="intro_desktop.html" class="sidebar-link">설치하기</a><a href="desktop.html" class="sidebar-link">데스크탑 빌드하기</a><a href="desktop_troubleshooting.html" class="sidebar-link">문제 해결</a><a href="desktop_google_breakpad.html" class="sidebar-link">구글 Breakpad 통합</a><a href="desktop_jenkins.html" class="sidebar-link">Jenkins 설치</a>
+  </div>
+</aside>
+      <article class="article-container" itemscope="" itemtype="http://schema.org/Article">
+        <div class="article-inner">
+          <div class="article">
+            <div class="inner">
+              <div class="article-content" itemprop="articleBody">
+                <h1 id="Buidl-Status-Yourself-and-Participate-in-a-Better-Web" class="article-heading"><a href="#Buidl-Status-Yourself-and-Participate-in-a-Better-Web" class="headerlink" title="#Buidl Status Yourself and Participate in a Better Web"></a>#Buidl Status Yourself and Participate in a Better Web<a class="article-anchor" href="#Buidl-Status-Yourself-and-Participate-in-a-Better-Web" aria-hidden="true"></a></h1><h2 id="The-easiest-way" class="article-heading"><a href="#The-easiest-way" class="headerlink" title="The easiest way"></a>The easiest way<a class="article-anchor" href="#The-easiest-way" aria-hidden="true"></a></h2><h3 id="1-Clone-the-repository" class="article-heading"><a href="#1-Clone-the-repository" class="headerlink" title="1. Clone the repository"></a>1. Clone the repository<a class="article-anchor" href="#1-Clone-the-repository" aria-hidden="true"></a></h3><pre><code class="shell">git clone https://github.com/status-im/status-react
+cd status-react
+</code></pre>
+<h3 id="2-Install-the-dependencies" class="article-heading"><a href="#2-Install-the-dependencies" class="headerlink" title="2. Install the dependencies"></a>2. Install the dependencies<a class="article-anchor" href="#2-Install-the-dependencies" aria-hidden="true"></a></h3><p>We created a special script that installs everything Status needs. However, this script works only<br>for macOS and Ubuntu Linux. If you use another Linux distribution, please, install all dependencies manually (you can find the list below).</p>
+<p>It’s also better to make sure that you have <a href="https://github.com/creationix/nvm" target="_blank" rel="noopener">Node Version Manager</a> installed before running this script.<br>The reason is simple — NVM provides much more flexibility and allows to have several NPM versions installed.</p>
+<p>Just run this to install all dependencies:</p>
+<pre><code class="shell">make setup
+</code></pre>
+<p>This script prepares and installs the following:</p>
+<ul>
+<li>Homebrew</li>
+<li>Java 8 (from Homebrew on Mac and from <code>ppa:webupd8team/java</code> on Ubuntu)</li>
+<li>Clojure and Leiningen</li>
+<li>Node.js (see note below)</li>
+<li>React Native CLI and Watchman</li>
+<li>Android SDK</li>
+<li>Android NDK r10e (under <code>~/Android/Sdk/</code>)</li>
+<li>Maven</li>
+<li>Cocoapods</li>
+</ul>
+<p><em>Note 1:</em> It can take up to 20 minutes depending on your machine and internet connection speed.</p>
+<p><em>Note 2:</em> If you don’t have <code>nvm</code>, <code>node@8</code> will be installed from Homebrew.<br>If you don’t have <code>nvm</code> AND already have <code>node</code> installed on your machine then nothing will happen.<br>Type <code>npm version</code> and make sure you don’t use Node.js v10 because it’s not supported by Realm.js (see <strong>Troubleshooting</strong> section for additional details).</p>
+<h2 id="Running-development-processes" class="article-heading"><a href="#Running-development-processes" class="headerlink" title="Running development processes"></a>Running development processes<a class="article-anchor" href="#Running-development-processes" aria-hidden="true"></a></h2><p>After you installed all the dependencies, you need to run two processes — the build process and React Native packager. Keep both processes running when you develop Status.</p>
+<h3 id="1-Build-process" class="article-heading"><a href="#1-Build-process" class="headerlink" title="1. Build process"></a>1. Build process<a class="article-anchor" href="#1-Build-process" aria-hidden="true"></a></h3><p>Just run <strong>one of these commands</strong> in the first terminal window:</p>
+<pre><code class="shell">make startdev-ios-simulator
+make startdev-ios-real
+make startdev-android-avd
+make startdev-android-genymotion
+make startdev-android-real
+</code></pre>
+<p>By doing this you will start the compilation of ClojureScript sources and run re-frisk (a tool for debugging).</p>
+<p>For additional information check the following:</p>
+<ul>
+<li><a href="https://github.com/status-im/clj-rn" target="_blank" rel="noopener">clj-rn</a>;</li>
+<li><a href="https://github.com/flexsurfer/re-frisk" target="_blank" rel="noopener">re-frisk</a>.</li>
+</ul>
+<h3 id="2-React-Native-packager" class="article-heading"><a href="#2-React-Native-packager" class="headerlink" title="2. React Native packager"></a>2. React Native packager<a class="article-anchor" href="#2-React-Native-packager" aria-hidden="true"></a></h3><p>Do this in the second terminal window:</p>
+<pre><code class="shell">react-native start
+</code></pre>
+<h2 id="Build-and-run-the-application-itself" class="article-heading"><a href="#Build-and-run-the-application-itself" class="headerlink" title="Build and run the application itself"></a>Build and run the application itself<a class="article-anchor" href="#Build-and-run-the-application-itself" aria-hidden="true"></a></h2><h3 id="iOS-macOS-only" class="article-heading"><a href="#iOS-macOS-only" class="headerlink" title="iOS (macOS only)"></a>iOS (macOS only)<a class="article-anchor" href="#iOS-macOS-only" aria-hidden="true"></a></h3><p>Just execute</p>
+<pre><code class="shell">react-native run-ios
+</code></pre>
+<p>If you wish to specify the simulator, just run <code>react-native run-ios --simulator=&quot;iPhone 7&quot;</code>.<br>You can check your available devices by running <code>xcrun simctl list devices</code> from the console.</p>
+<p>You can also start XCode and run the application there. Execute <code>open ios/StatusIm.xcworkspace</code>, select a device/simulator and click <strong>Run</strong>.</p>
+<p><em>Note:</em> Of course, you need to install XCode first in both cases. Just go to Mac AppStore to do this.</p>
+<h3 id="Android" class="article-heading"><a href="#Android" class="headerlink" title="Android"></a>Android<a class="article-anchor" href="#Android" aria-hidden="true"></a></h3><p>Installation script installs Android NDK, but you still need to install Android SDK manually to build and run Status on Android.</p>
+<p>The easiest way to do this is to install Android Studio — it will install almost everything for you.<br>There is a difficult way for those who don’t want/need Android Studio.</p>
+<p>In this case you have to do the following:</p>
+<ul>
+<li>Install Android SDK from you package manager (<code>brew install android-sdk</code>, <code>sudo apt-get install android-sdk</code>, …) or download it manually <a href="https://developer.android.com/studio/#downloads" target="_blank" rel="noopener">here</a>;</li>
+<li>Add several env variables to your profile (.bashrc, .zshrc, …) — installer should say what are these variables and their values;</li>
+<li>Run <code>android update sdk --no-ui</code> to update SDKs;</li>
+<li>Run <code>sdkmanager</code> from your machine and install the latest Android SDKs;</li>
+<li><em>Optional:</em> If you want to use AVD (Android Virtual Device, emulator), please, check <a href="https://developer.android.com/studio/run/emulator" target="_blank" rel="noopener">this documentation</a>;</li>
+<li><em>Optional:</em> If you don’t like AVD, you can also use <a href="https://genymotion.com" target="_blank" rel="noopener">Genymotion</a>;</li>
+<li>Execute <code>make run-android</code>.</li>
+</ul>
+<p>Errors like <code>android-sdk-16 not found</code> usually mean that you simply need to install missing SDKs. Run <code>sdkmanager</code> for that.</p>
+<p>Check the following docs if you still have problems:</p>
+<ul>
+<li><a href="https://gist.github.com/patrickhammond/4ddbe49a67e5eb1b9c03" target="_blank" rel="noopener">macOS</a>;</li>
+<li><a href="https://gist.github.com/zhy0/66d4c5eb3bcfca54be2a0018c3058931" target="_blank" rel="noopener">Ubuntu Linux</a>;</li>
+<li><a href="https://wiki.archlinux.org/index.php/android" target="_blank" rel="noopener">Arch Linux</a> (can also be useful for other Linux distributions).</li>
+</ul>
+<h2 id="Optional-Advanced-build-notes" class="article-heading"><a href="#Optional-Advanced-build-notes" class="headerlink" title="Optional: Advanced build notes"></a>Optional: Advanced build notes<a class="article-anchor" href="#Optional-Advanced-build-notes" aria-hidden="true"></a></h2><h3 id="Node-js" class="article-heading"><a href="#Node-js" class="headerlink" title="Node.js"></a>Node.js<a class="article-anchor" href="#Node-js" aria-hidden="true"></a></h3><p>There are several ways of installing Node.js on your machine.<br>One of the most convenient and easy is by using <a href="https://github.com/creationix/nvm" target="_blank" rel="noopener">Node Version Manager (nvm)</a>. However, our setup script installs <code>node</code> from Homebrew if <code>nvm</code> is not installed on your machine.</p>
+<p>That’s why we suggest to install <code>nvm</code> first if you want to have more flexible development environment.</p>
+<p>If <code>nvm</code> is already installed, <code>make setup</code> simply does the following:</p>
+<pre><code class="shell">nvm install 9
+nvm alias status-im 9
+nvm use status-im
+</code></pre>
+<h3 id="Custom-Android-SDK-location" class="article-heading"><a href="#Custom-Android-SDK-location" class="headerlink" title="Custom Android SDK location"></a>Custom Android SDK location<a class="article-anchor" href="#Custom-Android-SDK-location" aria-hidden="true"></a></h3><p>Some developers prefer to use Android SDK integrated in Android Studio. Of course, it doesn’t matter<br>for the build process — just make sure that <code>ANDROID_SDK_ROOT</code> points to a right location and you have all the SDKs installed.</p>
+<h2 id="Troubleshooting" class="article-heading"><a href="#Troubleshooting" class="headerlink" title="Troubleshooting"></a>Troubleshooting<a class="article-anchor" href="#Troubleshooting" aria-hidden="true"></a></h2><h3 id="I-see-lots-of-yarn-errors-while-installing-Realm-js" class="article-heading"><a href="#I-see-lots-of-yarn-errors-while-installing-Realm-js" class="headerlink" title="I see lots of yarn errors while installing Realm.js!"></a>I see lots of yarn errors while installing Realm.js!<a class="article-anchor" href="#I-see-lots-of-yarn-errors-while-installing-Realm-js" aria-hidden="true"></a></h3><p>Unfortunately, Realm doesn’t support Node.js v10. Which means that you need to use Node &lt; 10 to build Status.<br>One of the best ways to install any older version of Node.js is to use <code>nvm</code>.</p>
+<h3 id="I-have-issues-compiling-on-Xcode-10" class="article-heading"><a href="#I-have-issues-compiling-on-Xcode-10" class="headerlink" title="I have issues compiling on Xcode 10"></a>I have issues compiling on Xcode 10<a class="article-anchor" href="#I-have-issues-compiling-on-Xcode-10" aria-hidden="true"></a></h3><p>Some developers are experiencing errors compiling for iOS on Xcode 10 on MacOs Mojave:</p>
+<pre><code>error: Build input file cannot be found:
+
+&#39;status-react/node_modules/react-native/third-party/double-conversion-1.1.6/src/cached-powers.cc&#39;
+</code></pre><p>To fix similar errors run the following commands:</p>
+<pre><code class="shell">make clean
+
+cd ios
+pod update
+cd ..
+
+cd node_modules/react-native/scripts &amp;&amp; ./ios-install-third-party.sh &amp;&amp; cd ../../../
+
+cd node_modules/react-native/third-party/glog-0.3.4/ &amp;&amp; ../../scripts/ios-configure-glog.sh &amp;&amp; cd ../../../../
+</code></pre>
+<p>Now you should be able to compile again. The issue reference is <a href="ttps://github.com/facebook/react-native/issues/21168#issuecomment-422431294" target="_blank" rel="noopener">here</a>.</p>
+<h3 id="I-get-a-compilation-error-when-running-clj-R-dev-build-clj-watch" class="article-heading"><a href="#I-get-a-compilation-error-when-running-clj-R-dev-build-clj-watch" class="headerlink" title="I get a compilation error when running clj -R:dev build.clj watch"></a>I get a compilation error when running <code>clj -R:dev build.clj watch</code><a class="article-anchor" href="#I-get-a-compilation-error-when-running-clj-R-dev-build-clj-watch" aria-hidden="true"></a></h3><p>Some developers see the error <code>Exception in thread &quot;main&quot; java.lang.NoSuchFieldError: VAR, compiling:((..)/status-react/build.clj:1:1)</code> when running the <code>clj -R:dev buid.clj watch</code> command (e.g., via <code>make startdev-android-avd</code>).</p>
+<p>This happens when you are running an earlier version of Clojure that is incompatible with <code>cljs.build.api</code>. The solution is to upgrade to the latest version of Clojure. E.g., for macOS</p>
+<pre><code>$ brew upgrade clojure
+==&gt; Upgrading 1 outdated package:
+clojure 1.9.0.302 -&gt; 1.9.0.397
+</code></pre>
+              </div>
+              <footer class="article-footer">
+                <time class="article-footer-updated" datetime="2018-11-17T09:48:12.026Z" itemprop="dateModified">마지막 업데이트: 2018-11-17</time>
+                
+              </footer>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</div>
+
+    
+      
+    
+  </div>
+  
+</body>
+</html>

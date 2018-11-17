@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head prefix="og: http://ogp.me/ns#"><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="utf-8">
+  <title>Secure Messaging Compendium | Status</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Canonical links -->
+  <link rel="canonical" href="https://dev.status.im/research/secure_messaging_compendium.html">
+  <!-- Alternative links -->
+  
+    
+      <link rel="alternative" hreflang="en" href="https://dev.status.im/research/secure_messaging_compendium.html">
+    
+      <link rel="alternative" hreflang="es" href="https://dev.status.im/es/research/secure_messaging_compendium.html">
+    
+      <link rel="alternative" hreflang="ko" href="https://dev.status.im/ko/research/secure_messaging_compendium.html">
+    
+  
+  <!-- Icon -->
+  <link rel="icon" type="image/png" href="/img/logo-16.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="/img/logo-32.png" sizes="32x32">
+
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/apple-touch-icon-76.png?v=0.0.5">
+  <link rel="apple-touch-icon" sizes="120x120" href="/img/apple-touch-icon-120.png?v=0.0.5">
+  <link rel="apple-touch-icon" sizes="152x152" href="/img/apple-touch-icon-152.png?v=0.0.5">
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon-180.png?v=0.0.5">
+  <link rel="apple-touch-icon" href="/img/apple-touch-icon-1024.png?v=0.0.5">
+  <link rel="stylesheet" href="/css/main.min.css">
+  <link rel="alternate" href="/atom.xml" title="Status">
+  <meta property="og:image" content="/img/share.png">
+  <meta property="og:title" content="Status, a Mobile Client for Ethereum 2.0">
+</head>
+
+<body>
+  <div id="container">
+    
+      <div class="header">
+    <div class="header-left">
+        <a class="logo" href="/"></a>
+        
+    </div>
+    <div class="header-right">
+        <a href="https://get.status.im/chat/public/status" class="button">Join Status Chat</a>
+    </div>
+</div>
+
+<div class="mobile-nav-wrap">
+    <div class="mobile-nav-inner">
+        <a class="logo" href="/"></a>
+        <a class="icon-close mobile-nav-close" href="#"></a>
+        <ul class="mobile-nav">
+            <li><a href="https://our.status.im/">Blog</a></li>
+            <li><a href="/docs">Docs</a></li>
+            <li class="item--dropdown item--to-show">
+              <span>Projects</span>
+              <ul class="mobile-sub-nav">
+                <li><a href="https://incubate.status.im/" class="">Incubate</a></li>
+                <li><a href="https://nimbus.status.im/" class="">Nimbus</a></li>
+                <li><a href="https://embark.status.im/" class="">Embark</a></li>
+                <li><a href="https://studio.status.im/" class="">Studio</a></li>
+                <li><a href="https://hardwallet.status.im/" class="">Hardwallet</a></li>
+              </ul>
+            </li>
+            <li><a href="/contribute" class="">Contribute</a></li>
+        </ul>
+        <div class="mobile-nav-footer">
+            <a href="https://get.status.im/chat/public/status" class="button button--blue">Join Status Chat</a>
+        </div>
+    </div>
+    <div class="mobile-nav-overlay"></div>
+</div>
+
+<div class="popup-wrap popup-wrap--community">
+    <div class="popup popup--community">
+        <a class="popup__button popup__button--close"></a>
+        <h3 class="popup__title">Community</h3>
+        <div class="popup__inner">
+            <div class="cards cards--three cards--three--even cards--community cards--community--light">
+                <div class="card">
+                    <a href="https://get.status.im/chat/public/status" class="card-inner">
+                        <div class="community-icon community-icon--join"></div>
+                        <h4>Join the chat in Status</h4>
+                        <p class="secondary-text">Whisper sweet, encrypted nothings on a distributed network that no-one owns.</p>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="https://discuss.status.im/" class="card-inner">
+                        <div class="community-icon community-icon--discussion"></div>
+                        <h4>Join the Discussion</h4>
+                        <p class="secondary-text">Join longer discussions, work in progress, and our research here.</p>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="https://github.com/status-im/" class="card-inner">
+                        <div class="community-icon community-icon--contrubute"></div>
+                        <h4>Contribute to our Repos</h4>
+                        <p class="secondary-text">Help us #buidl the future by getting involved in the most active code base in Ethereum.</p>
+                    </a>
+                </div>
+            </div>
+            <h5>Find Out More</h5>
+            <div class="cards cards-community-more cards--three cards--three--even">
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-content">
+                            <div class="latest-posts"></div>
+                        </div>
+                        <div class="card-community-more__link"><a href="https://our.status.im/" class="link-arrow">Learn more</a></div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-content">
+                            <h4>Life at Status</h4>
+                            <p class="secondary-text">What's it like to live the decentralized lifestyle? Find out here.</p>
+                        </div>
+                        <div class="card-community-more__link"><a href="/contribute" class="link-arrow">Learn more</a></div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-content">
+                            <h4>Follow us on Twitter</h4>
+                            <p class="secondary-text">Join the conversation on our social channels to learn more.</p>
+                        </div>
+                        <div class="card-community-more__link"><a href="https://twitter.com/ethstatus/" class="link-arrow">Learn more</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup-overlay"></div>
+</div>
+
+<div class="popup-wrap popup-wrap--projects">
+    <div class="popup popup--projects">
+        <a class="popup__button popup__button--close"></a>
+        <h3 class="popup__title">Projects</h3>
+        <div class="popup__inner">
+            <h5>Help us #buidl</h5>
+            <div class="cards cards-community-more cards--three cards--three--even">
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-content">
+                            <h4>Embark</h4>
+                            <p class="secondary-text">Embark is a simple and easy to use development framework that enables you to build and deploy your own decentralized applications smoothly.</p>
+                        </div>
+                        <div class="card-community-more__link"><a href="https://embark.status.im/" class="link-arrow">Learn more</a></div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-content">
+                            <h4>Nimbus</h4>
+                            <p class="secondary-text">A research project and light client for Ethereum 2.0 designed to perform well on embedded systems and resource-restricted hardware.</p>
+                        </div>
+                        <div class="card-community-more__link"><a href="https://nimbus.status.im" class="link-arrow">Learn more</a></div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-content">
+                            <h4>Status Studio</h4>
+                            <p class="secondary-text">Studio is an integrated developer environment and educational platform designed to be a one-stop-shop for ÐApp development.</p>
+                        </div>
+                        <div class="card-community-more__link"><a href="https://studio.status.im" class="link-arrow">Learn more</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="separator"></div>
+            <h5>Tools for Everyone</h5>
+            <div class="cards cards-community-more cards--three cards--three--even">
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-content">
+                            <h4>Incubate</h4>
+                            <p class="secondary-text">Incubate supports open source, early stage startups with funding, technical mentorship, legal and regulatory compliance and much more.</p>
+                        </div>
+                        <div class="card-community-more__link"><a href="https://incubate.status.im/" class="link-arrow">Learn more</a></div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-content">
+                            <h4>Status Hardwallet</h4>
+                            <p class="secondary-text">A hardware wallet in the form of a card with a safe, contactless transaction experience</p>
+                        </div>
+                        <div class="card-community-more__link"><a href="https://hardwallet.status.im/" class="link-arrow">Learn more</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup-overlay"></div>
+</div>
+
+    
+    <div class="page-intro wrapper">
+  <header class="article-header">
+    <h1 class="article-title" itemprop="name">Secure Messaging Compendium</h1>
+    <a href="https://github.com/status-im/docs.status.im/edit/develop/source/research/secure_messaging_compendium.md" class="article-edit-link" title="Improve this doc">Edit on Github</a>
+  </header>
+</div>
+<div id="content-wrap">
+  <div id="content" class="wrapper">
+    <div id="content-inner">
+      <aside id="sidebar" role="navigation">
+  <div class="inner">
+    <strong class="sidebar-title">Whisper</strong><a href="index.html" class="sidebar-link">Do You Want To Know A Secret?</a><a href="extended_features.html" class="sidebar-link">Extended Features</a><a href="dark_routing.html" class="sidebar-link">Dark Routing</a><a href="whisper_pss.html" class="sidebar-link">Comparison with PSS</a><a href="whisper_faqs.html" class="sidebar-link">Whisper FAQs</a><a href="secure_messaging_compendium.html" class="sidebar-link current">Secure Messaging Compendium</a><strong class="sidebar-title">Research Projects</strong><a href="https://nimbus.status.im/" class="sidebar-link">Nimbus (Ethereum 2.0 Client)</a><strong class="sidebar-title">Tutorials</strong><a href="tutorial_basic_cli.html" class="sidebar-link">Whisper in Your CLI</a>
+  </div>
+</aside>
+      <article class="article-container" itemscope="" itemtype="http://schema.org/Article">
+        <div class="article-inner">
+          <div class="article">
+            <div class="inner">
+              <div class="article-content" itemprop="articleBody">
+                <h1 id="Secure-messaging-compendium" class="article-heading"><a href="#Secure-messaging-compendium" class="headerlink" title="Secure messaging compendium"></a>Secure messaging compendium<a class="article-anchor" href="#Secure-messaging-compendium" aria-hidden="true"></a></h1><h2 id="Starting-point" class="article-heading"><a href="#Starting-point" class="headerlink" title="Starting point"></a>Starting point<a class="article-anchor" href="#Starting-point" aria-hidden="true"></a></h2><p>Read <a href="https://medium.com/message/everything-is-broken-81e5f33a24e1" target="_blank" rel="noopener">this message</a>.</p>
+<h2 id="Whisper" class="article-heading"><a href="#Whisper" class="headerlink" title="Whisper"></a>Whisper<a class="article-anchor" href="#Whisper" aria-hidden="true"></a></h2><h3 id="Talks-and-specs" class="article-heading"><a href="#Talks-and-specs" class="headerlink" title="Talks and specs"></a>Talks and specs<a class="article-anchor" href="#Talks-and-specs" aria-hidden="true"></a></h3><p>In general, some of the links are dated 2015 whereas the protocol has moved to version 6 by now..</p>
+<ul>
+<li><a href="http://eips.ethereum.org/EIPS/eip-627" target="_blank" rel="noopener">EIP-627</a> - Vlad Gluhovsky’s proposal to document the protocol. There’s some interesting discussion in the <a href="https://github.com/ethereum/EIPs/pull/627#discussion_r124582523" target="_blank" rel="noopener">PR thread</a> about supporting multiple topics per message - now a parity extension (<code>psh</code>)</li>
+<li><a href="https://github.com/ethereum/wiki/wiki/Whisper-PoC-2-Protocol-Spec" target="_blank" rel="noopener">Whisper PoC Protocol spec</a> - this looks like one of the most detailed accounts of the thinking that went into whisper</li>
+<li><a href="https://github.com/ethereum/wiki/wiki/Whisper" target="_blank" rel="noopener">Whisper Proposal - Ethereum Wiki</a> - some high-level overview and background discussion</li>
+<li><a href="https://github.com/ethereum/wiki/wiki/Whisper-Overview" target="_blank" rel="noopener">Whisper Overview - Ethereum Wiki</a> - Useful section on use cases describing the effect of supplying different combinations of keys and encryption</li>
+<li><a href="https://www.youtube.com/watch?v=U_nPoBVLPiw" target="_blank" rel="noopener">DEVCON1: Shh! Whisper - Gavin Wood</a></li>
+<li><a href="https://youtu.be/vXVcuWvR5Z0?t=10" target="_blank" rel="noopener">DEVCON3: Whisper: Achieving Darkness - Vlad Gluhovsky, Guillaume Ballet</a></li>
+<li><a href="https://www.scuttlebutt.nz/talks" target="_blank" rel="noopener">Scuttlebutt talks</a></li>
+</ul>
+<h3 id="Status-notes-and-usages" class="article-heading"><a href="#Status-notes-and-usages" class="headerlink" title="Status notes and usages"></a>Status notes and usages<a class="article-anchor" href="#Status-notes-and-usages" aria-hidden="true"></a></h3><ul>
+<li><a href="https://docs.google.com/document/d/1RfGIYpZ8xOJKBD0w1F-DtwCKTA43O4zyWhxFtLtdLNc/edit" target="_blank" rel="noopener">Call notes, Vlad/Status</a> </li>
+<li><a href="https://wiki.status.im/Research_Whisper_Status" target="_blank" rel="noopener">Status whisper research</a> - V5-V6 difference, status implementation notes and what status needs the procotocol for</li>
+<li><a href="https://docs.google.com/document/d/1Cw3LA1r6ItLDp8bMFvIxQMxYjnzEVOcHuZJz8gRa7HE/edit#" target="_blank" rel="noopener">Open issues brainstorming</a> - round-table on what whisper pain points are held with our Whisper devs (2018-04-18)</li>
+<li><a href="https://github.com/status-im/status-react/blob/develop/src/status_im/transport/message/transit.cljs" target="_blank" rel="noopener">Messsage spec, clojure</a></li>
+<li><a href="https://docs.google.com/document/d/1Qh2h07T_qepzEJ7IytmxwIdQAOsGHrvhXwZxuZtbwgc/edit" target="_blank" rel="noopener">Protocol background work doc</a></li>
+<li><a href="https://wiki.status.im/index.php?title=Research_Whisper_Status" target="_blank" rel="noopener">Status wiki whisper docs, including V5/V6 comparison</a></li>
+<li><a href="https://status-im.slack.com/archives/C8QP8S5UH/p1523495849000201" target="_blank" rel="noopener">How-status-uses-whisper thread</a></li>
+<li><a href="https://status-im.slack.com/archives/C8QP8S5UH/p1523256511000120" target="_blank" rel="noopener">Mail-server topic-vs-bloom discussion</a></li>
+<li><a href="https://gist.github.com/noman-land/410fbfd632b61d29e78120b2475e9955" target="_blank" rel="noopener">JS usage example</a> - how to post a message to the chat</li>
+</ul>
+<h3 id="Push-notification" class="article-heading"><a href="#Push-notification" class="headerlink" title="Push notification"></a>Push notification<a class="article-anchor" href="#Push-notification" aria-hidden="true"></a></h3><ul>
+<li><a href="https://github.com/status-im/ideas/blob/master/ideas/086-push-notif-v2/README.md" target="_blank" rel="noopener">Push notifications v2</a> - idea for the next iteration of PN</li>
+<li><a href="https://github.com/status-im/status-go/wiki/Whisper-Push-Notifications" target="_blank" rel="noopener">Whisper push notifications</a> - this looks like the most recent one (?)</li>
+<li><a href="https://wiki.status.im/Decentralized_Push_Notification_Market" target="_blank" rel="noopener">Push notification market</a></li>
+<li><a href="https://wiki.status.im/Push_notifications_-_Where_we_are_at" target="_blank" rel="noopener">Where we are at</a></li>
+<li><a href="https://docs.google.com/document/d/1OgjnY8ps8lVA4dIohwkfGK9HVt0nZxEWbuNdb7BX5-o/edit#heading=h.kjam5hcc2nif" target="_blank" rel="noopener">Original proposal</a></li>
+</ul>
+<h2 id="PSS-postal-service-over-swarm" class="article-heading"><a href="#PSS-postal-service-over-swarm" class="headerlink" title="PSS - postal service over swarm"></a>PSS - postal service over swarm<a class="article-anchor" href="#PSS-postal-service-over-swarm" aria-hidden="true"></a></h2><ul>
+<li><a href="https://github.com/ethersphere/go-ethereum/blob/a12c003114ab702a820428c2c6ef3d950e1e0a55/swarm/pss/ARCHITECTURE.md" target="_blank" rel="noopener">Swarm PSS</a> - architectural notes, crucial quote: <code>Optionally routing can be turned off, forcing the message to be sent to all peers, similar to the behavior of the whisper protocol.</code><br><a href="https://gist.github.com/zelig/d52dab6a4509125f842bbd0dce1e9440" target="_blank" rel="noopener">PSS = bzz whispered</a> - initial PSS idea description<br><a href="https://hackmd.io/dDvTNlSWS6601GQ9LbEY8Q#" target="_blank" rel="noopener">PSS hacking</a> - Group chat using mutable resources from Mainframe / PSS</li>
+</ul>
+<h2 id="Related-ETH-projects" class="article-heading"><a href="#Related-ETH-projects" class="headerlink" title="Related ETH projects"></a>Related ETH projects<a class="article-anchor" href="#Related-ETH-projects" aria-hidden="true"></a></h2><ul>
+<li><a href="https://mainframe.com/" target="_blank" rel="noopener">Mainframe</a> - Swarm/PSS user?</li>
+<li><a href="https://blog.hellobloom.io/introducing-bloom-payment-channels-enabled-by-ethereum-whisper-1fec8ba10a03" target="_blank" rel="noopener">Bloom</a> - whisper use-cases</li>
+<li><a href="https://medium.com/originprotocol/introducing-origin-messaging-decentralized-secure-and-auditable-13c16fe0f13e" target="_blank" rel="noopener">Origin</a> - distributed log-based messenger, as well as an IPFS-based replicated log database</li>
+</ul>
+<h2 id="Secure-messaging-Non-ethereum" class="article-heading"><a href="#Secure-messaging-Non-ethereum" class="headerlink" title="Secure messaging - Non-ethereum"></a>Secure messaging - Non-ethereum<a class="article-anchor" href="#Secure-messaging-Non-ethereum" aria-hidden="true"></a></h2><ul>
+<li><a href="https://www.eff.org/deeplinks/2018/03/building-secure-messenger" target="_blank" rel="noopener">Building a secure messenger - EFF</a></li>
+<li><a href="https://wiki.tox.chat/users/techfaq" target="_blank" rel="noopener">Tox</a> - distributed secure chat, DHT-based P2P lookup with lots of clients</li>
+<li><a href="https://briarproject.org/how-it-works.html" target="_blank" rel="noopener">Briar</a> - messaging app employing several censorship-resitance techniques, like direct device-to-device comms (bluetooth, wifi), tor routing,</li>
+<li><a href="https://www.opengarden.com/firechat.html" target="_blank" rel="noopener">FireChat</a> - mesh comms, closed source</li>
+<li><a href="https://wire.com/en/security/" target="_blank" rel="noopener">Wire</a> - Open source messenger with lots of transparency around security</li>
+<li><a href="https://vuvuzela.io/" target="_blank" rel="noopener">Vuvuzela</a> - metadata-leak-resistant chat protocol / application, also alpenhorn that takes care of contact setup / key exchange</li>
+<li><a href="https://cwtch.im/" target="_blank" rel="noopener">cwtch</a> - extension of the Ricochet protocol that provides asynchronous, offline and multi-party metadata resistant messaging</li>
+<li><a href="https://www.scuttlebutt.nz" target="_blank" rel="noopener">Scuttlebutt</a> - open source, p2p replicated ledgers. 3 year old ecosystem, in active use. Offline friendly. Recent Android app (runs peer instance) <a href="https://manyver.se" target="_blank" rel="noopener">https://manyver.se</a></li>
+</ul>
+<h2 id="Security-encryption" class="article-heading"><a href="#Security-encryption" class="headerlink" title="Security / encryption"></a>Security / encryption<a class="article-anchor" href="#Security-encryption" aria-hidden="true"></a></h2><ul>
+<li><a href="https://signal.org/docs/specifications/x3dh/" target="_blank" rel="noopener">X3DH</a> - key exchange protocol for async comms with an intermediary server involved</li>
+<li><a href="https://eprint.iacr.org/2017/666.pdf" target="_blank" rel="noopener">On Ends-to-Ends Encryption: Asynchronous Group Messaging with Strong Security Guarantees</a> - Continuation of Signal Double Ratchet</li>
+<li><a href="https://git.matrix.org/git/olm/about/docs/megolm.rst" target="_blank" rel="noopener">Megolm</a> - An AES-based cryptographic ratchet intended for group communications</li>
+</ul>
+<h2 id="Alternate-protocol" class="article-heading"><a href="#Alternate-protocol" class="headerlink" title="Alternate protocol"></a>Alternate protocol<a class="article-anchor" href="#Alternate-protocol" aria-hidden="true"></a></h2><ul>
+<li><a href="https://snr.stanford.edu/salsify/" target="_blank" rel="noopener">Salsify</a> - real-time Internet video that jointly controls a video codec and a network transport protocol</li>
+</ul>
+<h2 id="PSS-Open-issues" class="article-heading"><a href="#PSS-Open-issues" class="headerlink" title="PSS Open issues"></a>PSS Open issues<a class="article-anchor" href="#PSS-Open-issues" aria-hidden="true"></a></h2><ul>
+<li>Mutable resources, how to find last message? binary search?</li>
+<li>Swap incentives?</li>
+</ul>
+
+              </div>
+              <footer class="article-footer">
+                <time class="article-footer-updated" datetime="2018-11-17T09:48:12.076Z" itemprop="dateModified">Last updated: 2018-11-17</time>
+                <a href="whisper_faqs.html" class="article-footer-prev" title="Whisper FAQs"><i class="fa fa-chevron-left"></i><span>Prev</span></a><a href="https://nimbus.status.im/" class="article-footer-next" title="Nimbus (Ethereum 2.0 Client)"><span>Next</span><i class="fa fa-chevron-right"></i></a>
+              </footer>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</div>
+
+    
+      
+    
+  </div>
+  
+</body>
+</html>
