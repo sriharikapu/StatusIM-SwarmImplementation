@@ -165,6 +165,9 @@ Fell free to check out [status.im on swarm.](https://swarm-gateways.net/bzz:/8ee
 ![Image](https://github.com/sriharikapu/StatusIM-SwarmImplementation/blob/master/Screen%20Shot%202018-11-17%20at%2010.01.14%20PM.png?raw=true)
 
 
+Issues: Cross origin resource sharing should be enabled if you want to view `Latest News Section` on the status.im swarm webpage.
+
+
 # Tools & Languages used
 - [Solidity](https://github.com/ethereum/solidity)
 - Stringify
