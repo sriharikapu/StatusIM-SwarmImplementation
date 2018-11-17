@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="es">
+<head prefix="og: http://ogp.me/ns#"><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="utf-8">
+  <title>Threat modeling with STRIDE | Status</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Canonical links -->
+  <link rel="canonical" href="https://dev.status.im/es/security/sec_threat_modeling.html">
+  <!-- Alternative links -->
+  
+    
+      <link rel="alternative" hreflang="en" href="https://dev.status.im/es/security/sec_threat_modeling.html">
+    
+      <link rel="alternative" hreflang="es" href="https://dev.status.im/es/es/security/sec_threat_modeling.html">
+    
+      <link rel="alternative" hreflang="ko" href="https://dev.status.im/ko/es/security/sec_threat_modeling.html">
+    
+  
+  <!-- Icon -->
+  <link rel="icon" type="image/png" href="/img/logo-16.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="/img/logo-32.png" sizes="32x32">
+
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/apple-touch-icon-76.png?v=0.0.5">
+  <link rel="apple-touch-icon" sizes="120x120" href="/img/apple-touch-icon-120.png?v=0.0.5">
+  <link rel="apple-touch-icon" sizes="152x152" href="/img/apple-touch-icon-152.png?v=0.0.5">
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon-180.png?v=0.0.5">
+  <link rel="apple-touch-icon" href="/img/apple-touch-icon-1024.png?v=0.0.5">
+  <link rel="stylesheet" href="/css/main.min.css">
+  <link rel="alternate" href="/atom.xml" title="Status">
+  <meta property="og:image" content="/img/share.png">
+  <meta property="og:title" content="Status, a Mobile Client for Ethereum 2.0">
+</head>
+
+<body>
+  <div id="container">
+    
+      <div class="header">
+    <div class="header-left">
+        <a class="logo" href="/es/"></a>
+        
+    </div>
+    <div class="header-right">
+        <a href="https://get.status.im/chat/public/status" class="button">Join Status Chat</a>
+    </div>
+</div>
+
+<div class="mobile-nav-wrap">
+    <div class="mobile-nav-inner">
+        <a class="logo" href="/es/"></a>
+        <a class="icon-close mobile-nav-close" href="#"></a>
+        <ul class="mobile-nav">
+            <li><a href="https://our.status.im/">Blog</a></li>
+            <li><a href="/es/docs">Docs</a></li>
+            <li class="item--dropdown item--to-show">
+              <span>Projects</span>
+              <ul class="mobile-sub-nav">
+                <li><a href="https://incubate.status.im/" class="">Incubate</a></li>
+                <li><a href="https://nimbus.status.im/" class="">Nimbus</a></li>
+                <li><a href="https://embark.status.im/" class="">Embark</a></li>
+                <li><a href="https://studio.status.im/" class="">Studio</a></li>
+                <li><a href="https://hardwallet.status.im/" class="">Hardwallet</a></li>
+              </ul>
+            </li>
+            <li><a href="/es/contribute" class="">Contribute</a></li>
+        </ul>
+        <div class="mobile-nav-footer">
+            <a href="https://get.status.im/chat/public/status" class="button button--blue">Join Status Chat</a>
+        </div>
+    </div>
+    <div class="mobile-nav-overlay"></div>
+</div>
+
+<div class="popup-wrap popup-wrap--community">
+    <div class="popup popup--community">
+        <a class="popup__button popup__button--close"></a>
+        <h3 class="popup__title">Community</h3>
+        <div class="popup__inner">
+            <div class="cards cards--three cards--three--even cards--community cards--community--light">
+                <div class="card">
+                    <a href="https://get.status.im/chat/public/status" class="card-inner">
+                        <div class="community-icon community-icon--join"></div>
+                        <h4>Join the chat in Status</h4>
+                        <p class="secondary-text">Whisper sweet, encrypted nothings on a distributed network that no-one owns.</p>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="https://discuss.status.im/" class="card-inner">
+                        <div class="community-icon community-icon--discussion"></div>
+                        <h4>Join the Discussion</h4>
+                        <p class="secondary-text">Join longer discussions, work in progress, and our research here.</p>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="https://github.com/status-im/" class="card-inner">
+                        <div class="community-icon community-icon--contrubute"></div>
+                        <h4>Contribute to our Repos</h4>
+                        <p class="secondary-text">Help us #buidl the future by getting involved in the most active code base in Ethereum.</p>
+                    </a>
+                </div>
+            </div>
+            <h5>Find Out More</h5>
+            <div class="cards cards-community-more cards--three cards--three--even">
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-content">
+                            <div class="latest-posts"></div>
+                        </div>
+                        <div class="card-community-more__link"><a href="https://our.status.im/" class="link-arrow">Learn more</a></div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-content">
+                            <h4>Life at Status</h4>
+                            <p class="secondary-text">What's it like to live the decentralized lifestyle? Find out here.</p>
+                        </div>
+                        <div class="card-community-more__link"><a href="/es/contribute" class="link-arrow">Learn more</a></div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-content">
+                            <h4>Follow us on Twitter</h4>
+                            <p class="secondary-text">Join the conversation on our social channels to learn more.</p>
+                        </div>
+                        <div class="card-community-more__link"><a href="https://twitter.com/ethstatus/" class="link-arrow">Learn more</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup-overlay"></div>
+</div>
+
+<div class="popup-wrap popup-wrap--projects">
+    <div class="popup popup--projects">
+        <a class="popup__button popup__button--close"></a>
+        <h3 class="popup__title">Projects</h3>
+        <div class="popup__inner">
+            <h5>Help us #buidl</h5>
+            <div class="cards cards-community-more cards--three cards--three--even">
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-content">
+                            <h4>Embark</h4>
+                            <p class="secondary-text">Embark is a simple and easy to use development framework that enables you to build and deploy your own decentralized applications smoothly.</p>
+                        </div>
+                        <div class="card-community-more__link"><a href="https://embark.status.im/" class="link-arrow">Learn more</a></div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-content">
+                            <h4>Nimbus</h4>
+                            <p class="secondary-text">A research project and light client for Ethereum 2.0 designed to perform well on embedded systems and resource-restricted hardware.</p>
+                        </div>
+                        <div class="card-community-more__link"><a href="https://nimbus.status.im" class="link-arrow">Learn more</a></div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-content">
+                            <h4>Status Studio</h4>
+                            <p class="secondary-text">Studio is an integrated developer environment and educational platform designed to be a one-stop-shop for ÐApp development.</p>
+                        </div>
+                        <div class="card-community-more__link"><a href="https://studio.status.im" class="link-arrow">Learn more</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="separator"></div>
+            <h5>Tools for Everyone</h5>
+            <div class="cards cards-community-more cards--three cards--three--even">
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-content">
+                            <h4>Incubate</h4>
+                            <p class="secondary-text">Incubate supports open source, early stage startups with funding, technical mentorship, legal and regulatory compliance and much more.</p>
+                        </div>
+                        <div class="card-community-more__link"><a href="https://incubate.status.im/" class="link-arrow">Learn more</a></div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-content">
+                            <h4>Status Hardwallet</h4>
+                            <p class="secondary-text">A hardware wallet in the form of a card with a safe, contactless transaction experience</p>
+                        </div>
+                        <div class="card-community-more__link"><a href="https://hardwallet.status.im/" class="link-arrow">Learn more</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup-overlay"></div>
+</div>
+
+    
+    <div class="page-intro wrapper">
+  <header class="article-header">
+    <h1 class="article-title" itemprop="name">Threat modeling with STRIDE</h1>
+    <a href="https://github.com/status-im/docs.status.im/edit/develop/source/security/sec_threat_modeling.md" class="article-edit-link" title="Improve this doc">Edit on Github</a>
+  </header>
+</div>
+<div id="content-wrap">
+  <div id="content" class="wrapper">
+    <div id="content-inner">
+      <aside id="sidebar" role="navigation">
+  <div class="inner">
+    <strong class="sidebar-title">Security</strong><a href="index.html" class="sidebar-link">Security Matters!</a><strong class="sidebar-title">Security at Status</strong><a href="sec_threat_modeling.html" class="sidebar-link current">Threat Modeling</a><a href="sec_existing_features.html" class="sidebar-link">Existing Features Project</a><a href="sec_new_features.html" class="sidebar-link">New Features Project</a><a href="sec_security_week.html" class="sidebar-link">Status Security Week</a><a href="sec_sensitive_data.html" class="sidebar-link">What is Sensitive Data?</a><a href="sec_experiment.html" class="sidebar-link">Security Experiment</a><strong class="sidebar-title">Audits</strong><a href="../audits/" class="sidebar-link">Status External Audits</a><strong class="sidebar-title">Guides</strong><a href="../guides/" class="sidebar-link">Security Week Guides</a><strong class="sidebar-title">Organization</strong><a href="../org_sec/" class="sidebar-link">Policy and Procedure</a>
+  </div>
+</aside>
+      <article class="article-container" itemscope="" itemtype="http://schema.org/Article">
+        <div class="article-inner">
+          <div class="article">
+            <div class="inner">
+              <div class="article-content" itemprop="articleBody">
+                <h1 id="Threat-Modeling-with-STRIDE" class="article-heading"><a href="#Threat-Modeling-with-STRIDE" class="headerlink" title="Threat Modeling with STRIDE"></a>Threat Modeling with STRIDE<a class="article-anchor" href="#Threat-Modeling-with-STRIDE" aria-hidden="true"></a></h1><p>Threat modelling is a way to try to identify risks and threats in the<br>application. It usually is done from the <em>point of view of an attacker</em>.</p>
+<h2 id="Threat-modeling-basics" class="article-heading"><a href="#Threat-modeling-basics" class="headerlink" title="Threat modeling basics"></a>Threat modeling basics<a class="article-anchor" href="#Threat-modeling-basics" aria-hidden="true"></a></h2><ol>
+<li><p>Understand the system or the feature.</p>
+<ul>
+<li><p>is there any sensitive information?</p>
+</li>
+<li><p>what is the security perimeter of the app? </p>
+</li>
+<li><p>where does data pass the perimeter?</p>
+</li>
+</ul>
+</li>
+<li><p>What can go wrong?</p>
+<ul>
+<li>STRIDE modelling <ul>
+<li>feature</li>
+<li>information tranferring endpoints</li>
+<li>data flows</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>What are we going to do about it?</p>
+<ul>
+<li><p>assess risks value and decide how to mitigate them;</p>
+</li>
+<li><p>document the decisions;</p>
+</li>
+</ul>
+</li>
+<li><p>Did we do a good job?</p>
+<ul>
+<li><p>Does the diagram represents the system well?</p>
+</li>
+<li><p>Did we found at least 5 threats per every thing in the diagram including<br>the data flows?</p>
+</li>
+<li><p>Did we document each threat?</p>
+</li>
+</ul>
+</li>
+</ol>
+<h2 id="STRIDE" class="article-heading"><a href="#STRIDE" class="headerlink" title="STRIDE"></a>STRIDE<a class="article-anchor" href="#STRIDE" aria-hidden="true"></a></h2><p>STRIDE is an acronym that stands for: Spoofing, Tampering, Repudiation,<br>Information disclosure, Denial of service, Elevation of priviledge.</p>
+<p>We try to apply all 6 attack types to every component or data flow of the<br>system and coming up with the possible attack vectors.</p>
+<h3 id="Spoofing" class="article-heading"><a href="#Spoofing" class="headerlink" title="Spoofing"></a>Spoofing<a class="article-anchor" href="#Spoofing" aria-hidden="true"></a></h3><p>Pretending you are someone/something you are not.</p>
+<p><em>Example: “Advisary can pretend to be a Status Bot and request Money to “Unblock” user’s account.”</em></p>
+<h3 id="Tampering" class="article-heading"><a href="#Tampering" class="headerlink" title="Tampering"></a>Tampering<a class="article-anchor" href="#Tampering" aria-hidden="true"></a></h3><p>Changing something in the app’s storage or memory or networking.</p>
+<p><em>Example: “A malicious application can read our debug logs and get the<br>password from there”.</em></p>
+<h3 id="Repudiation" class="article-heading"><a href="#Repudiation" class="headerlink" title="Repudiation"></a>Repudiation<a class="article-anchor" href="#Repudiation" aria-hidden="true"></a></h3><p>Claiming that you didn’t do something you did. Like you didn’t transfer money<br>while you did. Cleaning up the logs counts here.</p>
+<p>Claiming that something is invalid while it is valid.</p>
+<p><em>Example: A DApp claiming that the transaction didn’t go through.</em></p>
+<h3 id="Information-disclosure" class="article-heading"><a href="#Information-disclosure" class="headerlink" title="Information disclosure"></a>Information disclosure<a class="article-anchor" href="#Information-disclosure" aria-hidden="true"></a></h3><p>Leaking any information to any parties that aren’t allowed to read it. That is<br>not only about leaking it to the public, but also between accounts, etc.</p>
+<p><em>Example: Ethereum Node failed to restart on signout and discloses the keys and message<br>history to another user.</em></p>
+<h3 id="Denial-Of-Service" class="article-heading"><a href="#Denial-Of-Service" class="headerlink" title="Denial Of Service"></a>Denial Of Service<a class="article-anchor" href="#Denial-Of-Service" aria-hidden="true"></a></h3><p>Somehow waste all the app resources that it can’t do it’s main job.</p>
+<p><em>Example: User sends multiple huge messages and no one in the chatroom can<br>type anymore, because the phone is processing it too slowly.</em></p>
+<h3 id="Elevation-Of-Priviledge" class="article-heading"><a href="#Elevation-Of-Priviledge" class="headerlink" title="Elevation Of Priviledge"></a>Elevation Of Priviledge<a class="article-anchor" href="#Elevation-Of-Priviledge" aria-hidden="true"></a></h3><p>Doing something in the app that you don’t have permissions to.</p>
+<p><em>Example: Due to an error, it is possible to sign a transaction as another<br>user.</em></p>
+<p>Now, when we know the types of attacks, how do we use them to threat model?</p>
+<p>There are two useful questions that we can ask ourselves:</p>
+<ul>
+<li><p>“How using this feature of our app can an advisory do <code>&lt;attack type&gt;</code>?”<br>(Example: How using universal links can an advisory do a spoofing attack?).</p>
+</li>
+<li><p>“How using this <code>&lt;attack type&gt;</code> can an advisory get access to <code>&lt;sensitive
+info&gt;</code>?”<br>(Example: How using Tampering can an advisory get access to Recovery Phrase?)</p>
+</li>
+</ul>
+<p>Also, there is a card game called <a href="https://www.microsoft.com/en-us/sdl/adopt/eop.aspx" target="_blank" rel="noopener">“Elevation of Priviledge”</a>. It can help to threat model as well.<br>Download it, print out the cards and play!</p>
+<h2 id="‼️-UX-and-Security" class="article-heading"><a href="#‼️-UX-and-Security" class="headerlink" title="‼️ UX and Security"></a>‼️ UX and Security<a class="article-anchor" href="#‼️-UX-and-Security" aria-hidden="true"></a></h2><p>Being a developer or a QA, it is very easy to come up with technical threats<br>and technial solutions to them, leaving the “user errors” aside. </p>
+<p>That leaves out a huge amount of threats and risk mitigations aside. <strong>If it is<br>easy for a user to make an error in our app, it is our problem and we need to<br>fix that.</strong></p>
+<p>Pay precise attention on the UX problems, “user errors” and social engineering<br>while doing threat modeling!</p>
+<p>Read these articles to understand how issues in UX might make security features<br>essentially pointless:</p>
+<ul>
+<li><a href="https://people.eecs.berkeley.edu/%7Etygar/papers/Why_Johnny_Cant_Encrypt/OReilly.pdf" target="_blank" rel="noopener">“Why Johnny Can’t Encrypt (PGP 5 1999)”</a></li>
+<li><a href="https://cups.cs.cmu.edu/soups/2006/posters/sheng-poster_abstract.pdf" target="_blank" rel="noopener">“Why Johnny Still Can’t Encrypt (PGP 9, 2006)”</a></li>
+<li><a href="https://arxiv.org/pdf/1510.08555.pdf" target="_blank" rel="noopener">“Why Johnny Still, Still Can’t Encrypt (Mailvelope, 2015)”</a></li>
+</ul>
+<h2 id="Privacy-amp-Security" class="article-heading"><a href="#Privacy-amp-Security" class="headerlink" title="Privacy &amp; Security"></a>Privacy &amp; Security<a class="article-anchor" href="#Privacy-amp-Security" aria-hidden="true"></a></h2><p>STRIDE model that will be discussed further is typically focused on security<br>aspects. Privacy, on the other hand, might be left off.</p>
+<p>In Status, we shouldn’t put users’ privacy at risk, so when doing the threat<br>analysis also take into account how this feature/change/module/dataflow will<br>affect users’ privacy.</p>
+<p>Educate yourself about user privacy <a href="https://msdn.microsoft.com/en-us/library/aa480490.aspx" target="_blank" rel="noopener">here</a> or <a href="https://en.wikipedia.org/wiki/Internet_privacy" target="_blank" rel="noopener">here</a>.</p>
+<p>Take into account all the privacy aspects of any given feature/module/change.</p>
+<h2 id="Scoring-risks" class="article-heading"><a href="#Scoring-risks" class="headerlink" title="Scoring risks"></a>Scoring risks<a class="article-anchor" href="#Scoring-risks" aria-hidden="true"></a></h2><p>With scoring risks, repeatability is an important thing to gain. To do that, we<br>will use <a href="https://www.owasp.org/index.php/OWASP_Risk_Rating_Methodology" target="_blank" rel="noopener">OWASP Risk Rating Methodology</a>.</p>
+<h3 id="Handling-Risks-and-Scores" class="article-heading"><a href="#Handling-Risks-and-Scores" class="headerlink" title="Handling Risks and Scores"></a>Handling Risks and Scores<a class="article-anchor" href="#Handling-Risks-and-Scores" aria-hidden="true"></a></h3><ul>
+<li><p>All HIGH and CRITICAL risks should be documented (either as a checklist in<br>the feature’s GHI or as separate issues);</p>
+</li>
+<li><p>Usually, all HIGH and CRITICAL risks should be addressed and mitigated before the PR<br>is merged;</p>
+</li>
+<li><p>Exceptions can be made but they should be documented and a separate GHI<br>should be created for such risks.</p>
+</li>
+</ul>
+<h2 id="Learn-more" class="article-heading"><a href="#Learn-more" class="headerlink" title="Learn more"></a>Learn more<a class="article-anchor" href="#Learn-more" aria-hidden="true"></a></h2><p><a href="https://www.microsoft.com/en-us/sdl/adopt/eop.aspx" target="_blank" rel="noopener">“Elevation Of Priviledge” card game</a></p>
+<p><a href="https://misti.com/infosec-insider/threat-modeling-what-why-and-how" target="_blank" rel="noopener">Threat Modelling: What, Why and How?</a></p>
+<p><a href="https://www.youtube.com/watch?v=7Jk1GCvJnpM&amp;t=6350s" target="_blank" rel="noopener">YouTube Presentation from Basel</a></p>
+
+              </div>
+              <footer class="article-footer">
+                <time class="article-footer-updated" datetime="2018-11-17T09:48:12.085Z" itemprop="dateModified">Last updated: 2018-11-17</time>
+                
+              </footer>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</div>
+
+    
+      
+    
+  </div>
+  
+</body>
+</html>

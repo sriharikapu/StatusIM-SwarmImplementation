@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head prefix="og: http://ogp.me/ns#"><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="utf-8">
+  <title>Troubleshooting | Status</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Canonical links -->
+  <link rel="canonical" href="https://dev.status.im/ko/build_status/desktop_troubleshooting.html">
+  <!-- Alternative links -->
+  
+    
+      <link rel="alternative" hreflang="en" href="https://dev.status.im/ko/build_status/desktop_troubleshooting.html">
+    
+      <link rel="alternative" hreflang="es" href="https://dev.status.im/es/ko/build_status/desktop_troubleshooting.html">
+    
+      <link rel="alternative" hreflang="ko" href="https://dev.status.im/ko/ko/build_status/desktop_troubleshooting.html">
+    
+  
+  <!-- Icon -->
+  <link rel="icon" type="image/png" href="/img/logo-16.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="/img/logo-32.png" sizes="32x32">
+
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/apple-touch-icon-76.png?v=0.0.5">
+  <link rel="apple-touch-icon" sizes="120x120" href="/img/apple-touch-icon-120.png?v=0.0.5">
+  <link rel="apple-touch-icon" sizes="152x152" href="/img/apple-touch-icon-152.png?v=0.0.5">
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon-180.png?v=0.0.5">
+  <link rel="apple-touch-icon" href="/img/apple-touch-icon-1024.png?v=0.0.5">
+  <link rel="stylesheet" href="/css/main.min.css">
+  <link rel="alternate" href="/atom.xml" title="Status">
+  <meta property="og:image" content="/img/share.png">
+  <meta property="og:title" content="Status, a Mobile Client for Ethereum 2.0">
+</head>
+
+<body>
+  <div id="container">
+    
+      <div class="header">
+    <div class="header-left">
+        <a class="logo" href="/ko/"></a>
+        
+    </div>
+    <div class="header-right">
+        <a href="https://get.status.im/chat/public/status" class="button">Join Status Chat</a>
+    </div>
+</div>
+
+<div class="mobile-nav-wrap">
+    <div class="mobile-nav-inner">
+        <a class="logo" href="/ko/"></a>
+        <a class="icon-close mobile-nav-close" href="#"></a>
+        <ul class="mobile-nav">
+            <li><a href="https://our.status.im/">Blog</a></li>
+            <li><a href="/ko/docs">Docs</a></li>
+            <li class="item--dropdown item--to-show">
+              <span>Projects</span>
+              <ul class="mobile-sub-nav">
+                <li><a href="https://incubate.status.im/" class="">Incubate</a></li>
+                <li><a href="https://nimbus.status.im/" class="">Nimbus</a></li>
+                <li><a href="https://embark.status.im/" class="">Embark</a></li>
+                <li><a href="https://studio.status.im/" class="">Studio</a></li>
+                <li><a href="https://hardwallet.status.im/" class="">Hardwallet</a></li>
+              </ul>
+            </li>
+            <li><a href="/ko/contribute" class="">Contribute</a></li>
+        </ul>
+        <div class="mobile-nav-footer">
+            <a href="https://get.status.im/chat/public/status" class="button button--blue">Join Status Chat</a>
+        </div>
+    </div>
+    <div class="mobile-nav-overlay"></div>
+</div>
+
+<div class="popup-wrap popup-wrap--community">
+    <div class="popup popup--community">
+        <a class="popup__button popup__button--close"></a>
+        <h3 class="popup__title">Community</h3>
+        <div class="popup__inner">
+            <div class="cards cards--three cards--three--even cards--community cards--community--light">
+                <div class="card">
+                    <a href="https://get.status.im/chat/public/status" class="card-inner">
+                        <div class="community-icon community-icon--join"></div>
+                        <h4>Join the chat in Status</h4>
+                        <p class="secondary-text">Whisper sweet, encrypted nothings on a distributed network that no-one owns.</p>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="https://discuss.status.im/" class="card-inner">
+                        <div class="community-icon community-icon--discussion"></div>
+                        <h4>Join the Discussion</h4>
+                        <p class="secondary-text">Join longer discussions, work in progress, and our research here.</p>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="https://github.com/status-im/" class="card-inner">
+                        <div class="community-icon community-icon--contrubute"></div>
+                        <h4>Contribute to our Repos</h4>
+                        <p class="secondary-text">Help us #buidl the future by getting involved in the most active code base in Ethereum.</p>
+                    </a>
+                </div>
+            </div>
+            <h5>Find Out More</h5>
+            <div class="cards cards-community-more cards--three cards--three--even">
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-content">
+                            <div class="latest-posts"></div>
+                        </div>
+                        <div class="card-community-more__link"><a href="https://our.status.im/" class="link-arrow">Learn more</a></div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-content">
+                            <h4>Life at Status</h4>
+                            <p class="secondary-text">What's it like to live the decentralized lifestyle? Find out here.</p>
+                        </div>
+                        <div class="card-community-more__link"><a href="/ko/contribute" class="link-arrow">Learn more</a></div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-content">
+                            <h4>Follow us on Twitter</h4>
+                            <p class="secondary-text">Join the conversation on our social channels to learn more.</p>
+                        </div>
+                        <div class="card-community-more__link"><a href="https://twitter.com/ethstatus/" class="link-arrow">Learn more</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup-overlay"></div>
+</div>
+
+<div class="popup-wrap popup-wrap--projects">
+    <div class="popup popup--projects">
+        <a class="popup__button popup__button--close"></a>
+        <h3 class="popup__title">Projects</h3>
+        <div class="popup__inner">
+            <h5>Help us #buidl</h5>
+            <div class="cards cards-community-more cards--three cards--three--even">
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-content">
+                            <h4>Embark</h4>
+                            <p class="secondary-text">Embark is a simple and easy to use development framework that enables you to build and deploy your own decentralized applications smoothly.</p>
+                        </div>
+                        <div class="card-community-more__link"><a href="https://embark.status.im/" class="link-arrow">Learn more</a></div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-content">
+                            <h4>Nimbus</h4>
+                            <p class="secondary-text">A research project and light client for Ethereum 2.0 designed to perform well on embedded systems and resource-restricted hardware.</p>
+                        </div>
+                        <div class="card-community-more__link"><a href="https://nimbus.status.im" class="link-arrow">Learn more</a></div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-content">
+                            <h4>Status Studio</h4>
+                            <p class="secondary-text">Studio is an integrated developer environment and educational platform designed to be a one-stop-shop for ÐApp development.</p>
+                        </div>
+                        <div class="card-community-more__link"><a href="https://studio.status.im" class="link-arrow">Learn more</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="separator"></div>
+            <h5>Tools for Everyone</h5>
+            <div class="cards cards-community-more cards--three cards--three--even">
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-content">
+                            <h4>Incubate</h4>
+                            <p class="secondary-text">Incubate supports open source, early stage startups with funding, technical mentorship, legal and regulatory compliance and much more.</p>
+                        </div>
+                        <div class="card-community-more__link"><a href="https://incubate.status.im/" class="link-arrow">Learn more</a></div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-content">
+                            <h4>Status Hardwallet</h4>
+                            <p class="secondary-text">A hardware wallet in the form of a card with a safe, contactless transaction experience</p>
+                        </div>
+                        <div class="card-community-more__link"><a href="https://hardwallet.status.im/" class="link-arrow">Learn more</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup-overlay"></div>
+</div>
+
+    
+    <div class="page-intro wrapper">
+  <header class="article-header">
+    <h1 class="article-title" itemprop="name">Troubleshooting</h1>
+    <a href="https://github.com/status-im/docs.status.im/edit/develop/source/build_status/desktop_troubleshooting.md" class="article-edit-link" title="이 문서에 참여하기">Edit on Github</a>
+  </header>
+</div>
+<div id="content-wrap">
+  <div id="content" class="wrapper">
+    <div id="content-inner">
+      <aside id="sidebar" role="navigation">
+  <div class="inner">
+    <strong class="sidebar-title">스테이터스를 직접 빌드하세요</strong><a href="index.html" class="sidebar-link">더 발전된 웹의 구성원이 되어보세요</a><a href="status_go.html" class="sidebar-link">Status-Go 빌드</a><strong class="sidebar-title">스테이터스 데스크탑</strong><a href="intro_desktop.html" class="sidebar-link">설치하기</a><a href="desktop.html" class="sidebar-link">데스크탑 빌드하기</a><a href="desktop_troubleshooting.html" class="sidebar-link current">문제 해결</a><a href="desktop_google_breakpad.html" class="sidebar-link">구글 Breakpad 통합</a><a href="desktop_jenkins.html" class="sidebar-link">Jenkins 설치</a>
+  </div>
+</aside>
+      <article class="article-container" itemscope="" itemtype="http://schema.org/Article">
+        <div class="article-inner">
+          <div class="article">
+            <div class="inner">
+              <div class="article-content" itemprop="articleBody">
+                <h2 id="Initial-setup-issues" class="article-heading"><a href="#Initial-setup-issues" class="headerlink" title="Initial setup issues"></a>Initial setup issues<a class="article-anchor" href="#Initial-setup-issues" aria-hidden="true"></a></h2><h3 id="npm-install-hangs" class="article-heading"><a href="#npm-install-hangs" class="headerlink" title="npm install hangs"></a><code>npm install</code> hangs<a class="article-anchor" href="#npm-install-hangs" aria-hidden="true"></a></h3><p>Downgrade to version 5.5.1: <code>npm install -g npm@5.5.1</code>.</p>
+<h3 id="re-natal-missing" class="article-heading"><a href="#re-natal-missing" class="headerlink" title="re-natal missing"></a><code>re-natal</code> missing<a class="article-anchor" href="#re-natal-missing" aria-hidden="true"></a></h3><p>Create a link:<br><code>ln -sf node_modules/re-natal/index.js re-natal</code></p>
+<h3 id="react-native-run-desktop-complaining-about-missing-qmldir" class="article-heading"><a href="#react-native-run-desktop-complaining-about-missing-qmldir" class="headerlink" title="react-native run desktop complaining about missing qmldir:"></a><code>react-native run desktop</code> complaining about missing <code>qmldir</code>:<a class="article-anchor" href="#react-native-run-desktop-complaining-about-missing-qmldir" aria-hidden="true"></a></h3><pre><code>Command failed: ./build.sh -e &quot;node_modules/react-native-i18n/desktop;node_modules/react-native-config/desktop;node_modules/react-native-fs/desktop;node_modules/react-native-http-bridge/desktop;node_modules/react-native-webview-bridge/desktop;modules/react-native-status/desktop&quot;
+Error copying directory from &quot;/path-to-status-react/node_modules/react-native/ReactQt/runtime/src/qmldir&quot; to &quot;/path-to-status-react/desktop/lib/React&quot;.
+make[2]: *** [lib/CMakeFiles/copy-qmldir] Error 1
+make[1]: *** [lib/CMakeFiles/copy-qmldir.dir/all] Error 2
+make: *** [all] Error 2
+
+</code></pre><p>Can be solved by re-running <code>npm install react-native</code>, which puts the <code>ReactQt/runtime/src/qmldir</code> file back.</p>
+<h3 id="Missing-web3-package-issue" class="article-heading"><a href="#Missing-web3-package-issue" class="headerlink" title="Missing web3 package issue"></a>Missing web3 package issue<a class="article-anchor" href="#Missing-web3-package-issue" aria-hidden="true"></a></h3><p>After last upgrade of react-native-desktop to the v.0.53.3 of original react-native appeared some incompatibility between <code>react-native</code> and <code>web3</code> packages on npm install. Initially it installed usually fine, but after <code>react-native desktop</code> command execution <code>web3</code> package is get removed from <code>node_modules</code>. Manual install of web3 by <code>npm install web3</code> installs <code>web3</code> package, but removes <code>react-native</code> package. Workaround or solution?</p>
+<h3 id="Go-problem" class="article-heading"><a href="#Go-problem" class="headerlink" title="Go problem"></a>Go problem<a class="article-anchor" href="#Go-problem" aria-hidden="true"></a></h3><pre><code>panic: runloop has just unexpectedly stopped
+
+goroutine 50 [running]:
+github.com/status-im/status-go/vendor/github.com/rjeczalik/notify.init.0.func1()
+        /path-to-status-react/desktop/modules/react-native-status/desktop/StatusGo/src/github.com/status-im/status-go/vendor/github.com/rjeczalik/notify/watcher_fsevents_cgo.go:69 +0x79
+created by github.com/status-im/status-go/vendor/github.com/rjeczalik/notify.init.0
+        /path-to-status-react/desktop/modules/react-native-status/desktop/StatusGo/src/github.com/status-im/status-go/vendor/github.com/rjeczalik/notify/watcher_fsevents_cgo.go:65 +0x4e
+events.js:183
+      throw er; // Unhandled &#39;error&#39; event
+</code></pre><p>Related to <a href="https://github.com/rjeczalik/notify/issues/139" target="_blank" rel="noopener">https://github.com/rjeczalik/notify/issues/139</a>. Solution: re-run.</p>
+<h2 id="App-issues" class="article-heading"><a href="#App-issues" class="headerlink" title="App issues"></a>App issues<a class="article-anchor" href="#App-issues" aria-hidden="true"></a></h2><h3 id="Node-server-crashing" class="article-heading"><a href="#Node-server-crashing" class="headerlink" title="Node server crashing"></a>Node server crashing<a class="article-anchor" href="#Node-server-crashing" aria-hidden="true"></a></h3><p><code>node ./ubuntu_server.js</code> log:</p>
+<pre><code>DEBUG [status-im.utils.handlers:36] - Handling re-frame event:  :signal-event {&quot;type&quot;:&quot;node.crashed&quot;,&quot;event&quot;:{&quot;error&quot;:&quot;node is already running&quot;}}
+DEBUG [status-im.ui.screens.events:350] - :event-str {&quot;type&quot;:&quot;node.crashed&quot;,&quot;event&quot;:{&quot;error&quot;:&quot;node is already running&quot;}}
+DEBUG [status-im.utils.instabug:8] - Signal event: {&quot;type&quot;:&quot;node.crashed&quot;,&quot;event&quot;:{&quot;error&quot;:&quot;node is already running&quot;}}
+DEBUG [status-im.ui.screens.events:362] - Event  node.crashed  not handled
+</code></pre><p>Solution: prevent starting Node when there is an instance already running.</p>
+<h3 id="Reload-JS-blank-screen" class="article-heading"><a href="#Reload-JS-blank-screen" class="headerlink" title="Reload JS - blank screen"></a>Reload JS - blank screen<a class="article-anchor" href="#Reload-JS-blank-screen" aria-hidden="true"></a></h3><p>Console log for <code>react-native run-desktop</code> shows error 533.<br>Solution: reload again. Still, might hang at <code>Signing you in...</code> step (due to node attempted to be restarted). Re-run Figwheel and <code>react-native run-desktop</code></p>
+<h3 id="ReactButton-qml-non-existent-property-“elide”-error-upon-startup" class="article-heading"><a href="#ReactButton-qml-non-existent-property-“elide”-error-upon-startup" class="headerlink" title="ReactButton.qml non-existent property “elide” error upon startup"></a>ReactButton.qml non-existent property “elide” error upon startup<a class="article-anchor" href="#ReactButton-qml-non-existent-property-“elide”-error-upon-startup" aria-hidden="true"></a></h3><pre><code>qrc:/qml/ReactButton.qml:33: Error: Cannot assign to non-existent property &quot;elide&quot;
+&quot;Component for qrc:/qml/ReactWebView.qml is not loaded&quot;
+QQmlComponent: Component is not ready
+&quot;Unable to construct item from component qrc:/qml/ReactWebView.qml&quot;
+&quot;Can&#39;t create QML item for componenet qrc:/qml/ReactWebView.qml&quot;
+&quot;RCTWebViewView&quot; has no view for inspecting!
+</code></pre><p>Reload JS does not help, restarting Figwheel/react-native might not as well. Restarting Metro bundler solved it for me.</p>
+<h3 id="After-login-when-several-contacts-are-available-realm-errors" class="article-heading"><a href="#After-login-when-several-contacts-are-available-realm-errors" class="headerlink" title="After login when several contacts are available: realm errors"></a>After login when several contacts are available: realm errors<a class="article-anchor" href="#After-login-when-several-contacts-are-available-realm-errors" aria-hidden="true"></a></h3><ol>
+<li><code>attempting to create an object of type &#39;chat&#39;...</code></li>
+<li><code>attempting to create an object of type &#39;transport&#39;...</code></li>
+<li>Error text containing only the public key.<br>The realm stack trace follows.</li>
+</ol>
+<h3 id="Error-spawn-gnome-terminal-ENOENT" class="article-heading"><a href="#Error-spawn-gnome-terminal-ENOENT" class="headerlink" title="Error: spawn gnome-terminal ENOENT"></a>Error: spawn gnome-terminal ENOENT<a class="article-anchor" href="#Error-spawn-gnome-terminal-ENOENT" aria-hidden="true"></a></h3><p>In node server log:</p>
+<pre><code>ignoring exception: Error: read ECONNRESET
+</code></pre><p>In react-native log:</p>
+<pre><code>./run-app.sh: line 72: 56660 Segmentation fault: 11  /path-to-status-react/desktop/bin/Status $args
+events.js:183
+      throw er; // Unhandled &#39;error&#39; event
+      ^
+
+Error: spawn gnome-terminal ENOENT
+    at _errnoException (util.js:992:11)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:190:19)
+    at onErrorNT (internal/child_process.js:372:16)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)
+    at process._tickCallback (internal/process/next_tick.js:180:9)
+</code></pre><p>or</p>
+<pre><code>Status(7924,0x70000c1cd000) malloc: *** error for object 0x7f8b1539bd10: incorrect checksum for freed object - object was probably modified after being freed.
+*** set a breakpoint in malloc_error_break to debug
+./run-app.sh: line 72:  7924 Abort trap: 6           /path-to-status-react/desktop/bin/Status $args
+events.js:183
+      throw er; // Unhandled &#39;error&#39; event
+      ^
+
+Error: spawn gnome-terminal ENOENT
+    at _errnoException (util.js:992:11)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:190:19)
+    at onErrorNT (internal/child_process.js:372:16)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)
+    at process._tickCallback (internal/process/next_tick.js:180:9)
+</code></pre><h3 id="statusgo-error-during-react-native-run-desktop" class="article-heading"><a href="#statusgo-error-during-react-native-run-desktop" class="headerlink" title="statusgo error during react-native run-desktop"></a>statusgo error during <code>react-native run-desktop</code><a class="article-anchor" href="#statusgo-error-during-react-native-run-desktop" aria-hidden="true"></a></h3><pre><code>Command failed: build(.)sh -e &quot;node_modules/react-native-i18n/desktop;node_modules/react-native-config/desktop;node_modules/react-native-fs/desktop;node_modules/react-native-http-bridge/desktop;node_modules/react-native-webview-bridge/desktop;modules/react-native-status/desktop&quot;
+# github.com/status-im/status-go/vendor/github.com/ethereum/go-ethereum/crypto/bn256
+../vendor/github.com/ethereum/go-ethereum/crypto/bn256/bn256_fast.go:26: syntax error: unexpected = in type declaration
+../vendor/github.com/ethereum/go-ethereum/crypto/bn256/bn256_fast.go:30: syntax error: unexpected = in type declaration
+# github.com/status-im/status-go/vendor/github.com/ethereum/go-ethereum/crypto/bn256
+vendor/github.com/ethereum/go-ethereum/crypto/bn256/bn256_fast.go:26: syntax error: unexpected = in type declaration
+vendor/github.com/ethereum/go-ethereum/crypto/bn256/bn256_fast.go:30: syntax error: unexpected = in type declaration
+make[3]: *** [statusgo-library] Error 2
+make[2]: *** [modules/react-native-status/desktop/StatusGo/src/github.com/status-im/src/StatusGo_ep-stamp/StatusGo_ep-configure] Error 2
+make[1]: *** [modules/react-native-status/desktop/CMakeFiles/StatusGo_ep(.)dir/all] Error 2
+make: *** [all] Error 2
+</code></pre><h3 id="inotify-errors" class="article-heading"><a href="#inotify-errors" class="headerlink" title="inotify errors"></a>inotify errors<a class="article-anchor" href="#inotify-errors" aria-hidden="true"></a></h3><p>upon running <code>npm start</code> on linux, watchman may indicate: “The user limit on the total number of inotify watches was reached”</p>
+<p>This can be fixed by running the below command. Note, changes will only be as valid as the current terminal session.</p>
+<pre><code>echo 999999 | sudo tee -a /proc/sys/fs/inotify/max_user_watches &amp;&amp; echo 999999 | sudo tee -a
+/proc/sys/fs/inotify/max_queued_events &amp;&amp; echo 999999 | sudo tee -a /proc/sys/fs/inotify/max_user_instances &amp;&amp;
+watchman shutdown-server &amp;&amp; sudo sysctl -p
+</code></pre><p>To persist the changes on Linux edit <code>/etc/sysctl.conf</code> by adding the following lines</p>
+<pre><code>fs.inotify.max_user_watches = 999999
+fs.inotify.max_queued_events = 999999
+fs.inotify.max_user_instances = 999999
+</code></pre><p>then refresh the config with <code>sudo sysctl -p</code></p>
+<h3 id="metro-bundler-caching-issue" class="article-heading"><a href="#metro-bundler-caching-issue" class="headerlink" title="metro bundler caching issue"></a>metro bundler caching issue<a class="article-anchor" href="#metro-bundler-caching-issue" aria-hidden="true"></a></h3><p>Time to time metro bundler for some reasons doesn’t recognize changes in JavaScript sources and returns old version of the files on react-native app request. Cleaning of cache should help to solve the issue (usually running <code>react-native start --reset-cache</code> to start the bundler should work) .</p>
+<p>On Linux metro bundler saves cache to the following directories (can be removed manually):<br>/tmp/metro-cache-*</p>
+
+              </div>
+              <footer class="article-footer">
+                <time class="article-footer-updated" datetime="2018-11-17T09:48:12.025Z" itemprop="dateModified">마지막 업데이트: 2018-11-17</time>
+                
+              </footer>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</div>
+
+    
+      
+    
+  </div>
+  
+</body>
+</html>
