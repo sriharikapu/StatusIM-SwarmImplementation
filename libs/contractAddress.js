@@ -1,5 +1,5 @@
 /** Dynamic Storage **/
 
-const contractAddress= '0x574594ac75788edfcccac3767f6249fa076d19f3';
+const contractAddress= '0xfab190f242a8b892c3034111b311775da8bc4353';
 
 module.exports = contractAddress;
