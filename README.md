@@ -104,6 +104,11 @@ Compile the file cross weather the code is working fine or not
 go tool compile swarm_upload.go 
 go run swarm_upload.go
 ```
+Here is a simple single page HTML [Resume](https://swarm-gateways.net/bzz:/5b3bf6a9beabd8f4c36ed0b1a92fe3f4047797ccd1674ea5e3ed44963d700d39/) uploaded on swarm.
+
+Indeed you follow the basic approch in uploading files & directories on swarm. Which is discribed in the [wiki](https://github.com/sriharikapu/StatusIM-SwarmImplementation/wiki/Getting-started).
+
+
 # Alternative Approach [Recommended]
 Alternatively In this Project I used [Swarmgw](https://www.npmjs.com/package/swarmgw) For accomlising the task of rendering the static html page on a web browser.
 
