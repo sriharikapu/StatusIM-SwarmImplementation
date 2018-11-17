@@ -1,4 +1,4 @@
-[
+var contarctAbi= [
 	{
 		"constant": false,
 		"inputs": [
