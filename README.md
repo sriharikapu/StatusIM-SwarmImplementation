@@ -180,4 +180,4 @@ Issues: Cross origin resource sharing should be enabled if you want to view `Lat
 - [Runkit](https://npm.runkit.com/)
 - [swarmgw](https://www.npmjs.com/package/swarmgw)
 
-Thanks to [andytudhope](https://github.com/andytudhope) , [jacqueswww](https://github.com/jacqueswww) ,[leafcutterant](https://github.com/leafcutterant)
+Thanks to [andytudhope](https://github.com/andytudhope), [jacqueswww](https://github.com/jacqueswww), [leafcutterant](https://github.com/leafcutterant)
